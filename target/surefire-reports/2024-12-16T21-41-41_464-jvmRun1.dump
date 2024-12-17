@@ -1,4 +1,4 @@
-# Created at 2024-12-16T19:39:30.152
+# Created at 2024-12-16T21:41:41.745
 java.lang.NoSuchMethodError: 'void org.junit.platform.commons.util.CollectionUtils.forEachInReverseOrder(java.util.List, java.util.function.Consumer)'
 	at org.junit.platform.launcher.core.LauncherConfigurationParameters$Builder.build(LauncherConfigurationParameters.java:143)
 	at org.junit.platform.launcher.core.LauncherDiscoveryRequestBuilder.buildLauncherConfigurationParameters(LauncherDiscoveryRequestBuilder.java:324)
