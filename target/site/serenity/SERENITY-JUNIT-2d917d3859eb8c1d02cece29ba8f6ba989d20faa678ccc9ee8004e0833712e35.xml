@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="com.example.serenity.LibraryApiTest" skipped="0" tests="1" time="0.37" timestamp="2024-12-26 03:12:53"><testcase classname="com.example.serenity.LibraryApiTest" name="Should fetch all books"/></testsuite>

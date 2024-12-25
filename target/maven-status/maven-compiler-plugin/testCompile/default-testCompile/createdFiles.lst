@@ -1,3 +1,1 @@
-com/example/steps/LoginSteps.class
-com/example/runners/CucumberTestSuite.class
-com/example/serenity/AppTest.class
+com/example/serenity/LibraryApiTest.class
