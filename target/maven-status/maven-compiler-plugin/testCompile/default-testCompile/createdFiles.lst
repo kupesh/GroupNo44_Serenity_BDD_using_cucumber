@@ -1,3 +1,3 @@
-runner/CucumberTestSuite.class
-com/example/serenity/AppTest.class
-steps/LoginStepDefinitions.class
+steps/SearchSteps.class
+pages/DarazHomePage.class
+runner/CucumberTest.class
