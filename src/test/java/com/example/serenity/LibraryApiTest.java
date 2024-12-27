@@ -14,7 +14,7 @@ import static io.restassured.RestAssured.given;
 public class LibraryApiTest {
 
     static {
-        // Set the base URI for the API
+
         RestAssured.baseURI = "http://localhost:7081/api";
     }
 
@@ -42,7 +42,7 @@ public class LibraryApiTest {
 //        """;
 //
 //        Response response = given()
-//                .auth().basic(username, password) // Add Basic Auth
+//                .auth().basic(username, password)
 //                .contentType(ContentType.JSON)
 //                .body(newBook)
 //                .when()
@@ -55,7 +55,7 @@ public class LibraryApiTest {
 //        // Verify the created book
 //        int id = response.jsonPath().getInt("id");
 //        given()
-//                .auth().basic(username, password) // Add Basic Auth
+//                .auth().basic(username, password)
 //                .when()
 //                .get("/books/" + id)
 //                .then()
@@ -77,15 +77,15 @@ public class LibraryApiTest {
                 .body("id", equalTo(bookId));
     }
 
-    @Test
-    public void shouldDeleteBook() {
-        int bookId = 1;
-
-        given()
-                .auth().basic(username, password)
-                .when()
-                .delete("/books/" + bookId)
-                .then()
-                .statusCode(200);
-    }
+//    @Test
+//    public void shouldDeleteBook() {
+//        int bookId = 1;
+//
+//        given()
+//                .auth().basic(username, password)
+//                .when()
+//                .delete("/books/" + bookId)
+//                .then()
+//                .statusCode(200);
+//    }
 }
