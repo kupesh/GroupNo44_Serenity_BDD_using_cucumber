@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\src\test\java\com\example\serenity\AppTest.java
 D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\src\test\java\runner\CucumberTestSuite.java
 D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\src\test\java\steps\LoginStepDefinitions.java
+=======
+/Users/krishihanravi/Desktop/IT-Quality-Assurance-Assignment/src/test/java/com/example/serenity/apitesting/base/BaseTest.java
+/Users/krishihanravi/Desktop/IT-Quality-Assurance-Assignment/src/test/java/com/example/serenity/apitesting/suites/TestSuite.java
+/Users/krishihanravi/Desktop/IT-Quality-Assurance-Assignment/src/test/java/com/example/serenity/apitesting/tests/LibraryAdminGetTest.java
+>>>>>>> b2ad9bc6e8eb6dc66974bfe541d99e075570ea5a

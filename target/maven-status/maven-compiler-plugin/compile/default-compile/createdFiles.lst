@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 com\example\serenity\App.class
+=======
+com/example/serenity/config/Constants.class
+com/example/serenity/utils/RequestHelper.class
+com/example/serenity/models/Book.class
+>>>>>>> b2ad9bc6e8eb6dc66974bfe541d99e075570ea5a

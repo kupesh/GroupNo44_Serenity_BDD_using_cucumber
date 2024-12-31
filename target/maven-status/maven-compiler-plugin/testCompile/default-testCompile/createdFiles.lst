@@ -1,3 +1,10 @@
+<<<<<<< HEAD
 runner\CucumberTestSuite.class
 steps\LoginStepDefinitions.class
 com\example\serenity\AppTest.class
+=======
+com/example/serenity/apitesting/suites/TestSuite.class
+com/example/serenity/apitesting/tests/LibraryAdminGetTest$1.class
+com/example/serenity/apitesting/tests/LibraryAdminGetTest.class
+com/example/serenity/apitesting/base/BaseTest.class
+>>>>>>> b2ad9bc6e8eb6dc66974bfe541d99e075570ea5a
