@@ -1,2 +1,4 @@
-com/example/serenity/LibraryApiTest.class
-com/example/serenity/LibraryGetTest.class
+com/example/serenity/apitesting/suites/TestSuite.class
+com/example/serenity/apitesting/tests/LibraryAdminGetTest$1.class
+com/example/serenity/apitesting/tests/LibraryAdminGetTest.class
+com/example/serenity/apitesting/base/BaseTest.class
