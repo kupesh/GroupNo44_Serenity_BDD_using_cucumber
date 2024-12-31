@@ -1,4 +1,4 @@
-package com.example.serenity.utils;
+package com.example.serenity.apitesting.utils;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;

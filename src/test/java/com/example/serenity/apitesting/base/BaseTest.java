@@ -1,6 +1,6 @@
 package com.example.serenity.apitesting.base;
 
-import com.example.serenity.config.Constants;
+import com.example.serenity.apitesting.config.Constants;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.BeforeAll;
 

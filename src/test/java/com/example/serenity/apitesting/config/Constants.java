@@ -1,4 +1,4 @@
-package com.example.serenity.config;
+package com.example.serenity.apitesting.config;
 
 public class Constants {
     public static final String BASE_URI = "http://localhost:7081/api";

@@ -1,8 +1,8 @@
 package com.example.serenity.apitesting.tests;
 
 import com.example.serenity.apitesting.base.BaseTest;
-import com.example.serenity.models.Book;
-import com.example.serenity.utils.RequestHelper;
+import com.example.serenity.apitesting.models.Book;
+import com.example.serenity.apitesting.utils.RequestHelper;
 import com.google.gson.reflect.TypeToken;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,8 +12,7 @@ import io.restassured.response.Response;
 import java.lang.reflect.Type;
 import java.util.List;
 
-import static com.example.serenity.config.Constants.*;
-import static com.example.serenity.config.Constants.ADMIN_PASSWORD;
+import static com.example.serenity.apitesting.config.Constants.ADMIN_PASSWORD;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 

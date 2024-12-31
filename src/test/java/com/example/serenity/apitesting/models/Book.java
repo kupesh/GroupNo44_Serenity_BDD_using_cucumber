@@ -1,4 +1,4 @@
-package com.example.serenity.models;
+package com.example.serenity.apitesting.models;
 
 public class Book {
     private int id;
