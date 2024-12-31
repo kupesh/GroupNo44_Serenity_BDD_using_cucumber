@@ -1,4 +1,10 @@
-com/example/serenity/apitesting/suites/TestSuite.class
-com/example/serenity/apitesting/tests/LibraryAdminGetTest$1.class
+com/example/serenity/apitesting/tests/LibraryUserGetTest$1.class
+steps/LoginStepDefinitions.class
+com/example/serenity/apitesting/config/Constants.class
+com/example/serenity/apitesting/tests/LibraryUserGetTest.class
 com/example/serenity/apitesting/tests/LibraryAdminGetTest.class
 com/example/serenity/apitesting/base/BaseTest.class
+com/example/serenity/apitesting/suites/TestSuite.class
+com/example/serenity/apitesting/models/Book.class
+com/example/serenity/apitesting/utils/RequestHelper.class
+com/example/serenity/apitesting/tests/LibraryAdminGetTest$1.class

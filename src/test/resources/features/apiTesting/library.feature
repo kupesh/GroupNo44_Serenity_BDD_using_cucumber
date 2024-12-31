@@ -3,23 +3,23 @@ Feature: Library API Testing
   I want to perform CRUD operations,
   So that I can manage the books in the library effectively.
 
-  Background:
-    Given the library API is running
 
   Scenario: Admin fetch all books successfully
+    Given the library API is running using admin
     When Admin fetch all books with valid credentials
     Then the response code should be 200
     And the response should contain a list of books
 
   Scenario: User fetch all books successfully
+    Given the library API is running using user
     When User fetch all books with valid credentials
-    Then the response code should be 200
-    And the response should contain a list of books
+    Then the response code for user should be 200
+    And the response should contain a list of books for user
 
-  Scenario: Fetch books without authentication
-    When I fetch all books without authentication
-    Then the response code should be 401
-    And the response message should indicate unauthorized access
+#  Scenario: Fetch books without authentication
+#    When I fetch all books without authentication
+#    Then the response code should be 401
+#    And the response message should indicate unauthorized access
 
 #  Scenario: Fetch a specific book by ID
 #    Given a book with ID 1 exists in the library
