@@ -1,3 +1,5 @@
-steps/SearchSteps.class
-pages/HomePage.class
-runner/CucumberTest.class
+pages\ProductPage.class
+pages\HomePage.class
+steps\SearchSteps.class
+steps\CartSteps.class
+runner\CucumberTest.class
