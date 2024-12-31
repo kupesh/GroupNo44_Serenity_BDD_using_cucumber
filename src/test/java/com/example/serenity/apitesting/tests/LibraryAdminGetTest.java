@@ -21,7 +21,7 @@ public class LibraryAdminGetTest extends BaseTest {
     private static List<Book> bookList;
     private static Response response;
 
-    @Given("the library API is running")
+    @Given("the library API is running using admin")
     public void theLibraryAPIIsRunning() {
         RequestHelper requestHelper = new RequestHelper(BASE_URI);
         Response healthResponse = requestHelper
@@ -31,7 +31,7 @@ public class LibraryAdminGetTest extends BaseTest {
         assertThat(healthResponse.getStatusCode(), is(200));
     }
 
-    @When("User fetch all books with valid credentials")
+    @When("Admin fetch all books with valid credentials")
     public void fetchAllBooksWithValidCredentials() {
         Type bookListType = new TypeToken<List<Book>>() {}.getType();
         RequestHelper requestHelper = new RequestHelper( BASE_URI);

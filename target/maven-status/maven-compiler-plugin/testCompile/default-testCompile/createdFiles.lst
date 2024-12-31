@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 runner\CucumberTestSuite.class
 steps\LoginStepDefinitions.class
 com\example\serenity\AppTest.class
@@ -8,3 +9,15 @@ com/example/serenity/apitesting/tests/LibraryAdminGetTest$1.class
 com/example/serenity/apitesting/tests/LibraryAdminGetTest.class
 com/example/serenity/apitesting/base/BaseTest.class
 >>>>>>> b2ad9bc6e8eb6dc66974bfe541d99e075570ea5a
+=======
+com/example/serenity/apitesting/tests/LibraryUserGetTest$1.class
+steps/LoginStepDefinitions.class
+com/example/serenity/apitesting/config/Constants.class
+com/example/serenity/apitesting/tests/LibraryUserGetTest.class
+com/example/serenity/apitesting/tests/LibraryAdminGetTest.class
+com/example/serenity/apitesting/base/BaseTest.class
+com/example/serenity/apitesting/suites/TestSuite.class
+com/example/serenity/apitesting/models/Book.class
+com/example/serenity/apitesting/utils/RequestHelper.class
+com/example/serenity/apitesting/tests/LibraryAdminGetTest$1.class
+>>>>>>> 05295f8e0be3b290ee2901d0ea30a68aead4daf7
