@@ -1,3 +1,4 @@
 steps/SearchSteps.class
 pages/HomePage.class
+config/Constants.class
 runner/CucumberTest.class

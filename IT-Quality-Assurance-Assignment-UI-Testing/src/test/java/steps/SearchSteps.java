@@ -1,5 +1,6 @@
 package steps;
 
+import config.Constants;
 import net.serenitybdd.annotations.Steps;
 import pages.HomePage;
 import io.cucumber.java.en.Given;
@@ -13,7 +14,7 @@ public class SearchSteps {
     @Steps
     private HomePage HomePage;
 
-    final String baseUrl = "https://www.singersl.com/";
+    final String baseUrl = Constants.BASE_URL+Constants.HOME_PAGE_ENDPOINT;
 
     @Given("I open the homepage")
     public void openHomePage() {
