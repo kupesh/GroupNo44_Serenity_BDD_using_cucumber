@@ -1,5 +1,6 @@
 package steps;
 
+import io.cucumber.java.en.And;
 import net.serenitybdd.annotations.Steps;
 import pages.ProductPage;
 import io.cucumber.java.en.Given;
@@ -32,11 +33,29 @@ public class CartSteps {
 
     @Then("I should see the message {string}")
     public void verifyMessage(String message) {
-        assertTrue(productPage.getPageSource().contains(message));
+        boolean messageFound = false;
+        int maxRetries = 10; // Retry up to 10 times
+        int interval = 500; // Wait 500ms between retries
+
+        for (int i = 0; i < maxRetries; i++) {
+            if (productPage.checkVisibility(message)) {
+                messageFound = true;
+                break;
+            }
+            try {
+                Thread.sleep(interval); // Wait before retrying
+            } catch (InterruptedException e) {
+                Thread.currentThread().interrupt(); // Reset thread interrupt status
+                throw new RuntimeException("Thread interrupted while waiting for message", e);
+            }
+        }
+
+        assertTrue("Expected message not found: " + message, messageFound);
     }
 
-    @Then("the cart should show {int} item(s)")
-    public void verifyCartItems(int itemCount) {
+
+    @And("the cart should show {int} item(s)")
+    public void verifyCartItems(int itemCount) throws InterruptedException {
         assertTrue(productPage.getCartItemCount() == itemCount);
     }
 
