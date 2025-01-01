@@ -11,4 +11,5 @@ public class Constants {
     public static final String GET_BOOKS_ENDPOINT = "/books";
     public static final String GET_BOOK_BY_ID_ENDPOINT = "/books/{id}";
     public static final String DELETE_BOOK_ENDPOINT = "/books/{id}";
+    public static final String CREATE_BOOK_ENDPOINT = "/books";
 }

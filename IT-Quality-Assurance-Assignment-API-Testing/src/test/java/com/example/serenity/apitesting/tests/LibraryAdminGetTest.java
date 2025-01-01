@@ -4,7 +4,7 @@ import com.example.serenity.apitesting.base.BaseTest;
 import com.example.serenity.apitesting.models.Book;
 import com.example.serenity.apitesting.utils.RequestHelper;
 import com.google.gson.reflect.TypeToken;
-import io.cucumber.java.en.Given;
+
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
@@ -21,15 +21,6 @@ public class LibraryAdminGetTest extends BaseTest {
     private static List<Book> bookList;
     private static Response response;
 
-    @Given("the library API is running using admin")
-    public void theLibraryAPIIsRunning() {
-        RequestHelper requestHelper = new RequestHelper(BASE_URI);
-        Response healthResponse = requestHelper
-                .withEndpoint(GET_BOOKS_ENDPOINT)
-                .withAuth(ADMIN_USERNAME, ADMIN_PASSWORD)
-                .sendRequest("GET");
-        assertThat(healthResponse.getStatusCode(), is(200));
-    }
 
     @When("Admin fetch all books with valid credentials")
     public void fetchAllBooksWithValidCredentials() {
@@ -42,7 +33,7 @@ public class LibraryAdminGetTest extends BaseTest {
         bookList = response.body().as(bookListType);
     }
 
-    @Then("the response code should be {int}")
+    @Then("the response code for admin should be {int}")
     public void verifyResponseCode(int statusCode) {
         assertThat(response.getStatusCode(), is(statusCode));
     }
@@ -52,5 +43,6 @@ public class LibraryAdminGetTest extends BaseTest {
         assertThat(bookList, is(notNullValue()));
         assertThat(bookList.size(), greaterThan(0));
     }
+
 
 }
