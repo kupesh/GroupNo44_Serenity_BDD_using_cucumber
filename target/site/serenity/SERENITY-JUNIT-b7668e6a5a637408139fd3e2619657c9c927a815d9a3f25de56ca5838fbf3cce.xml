@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Library API Testing" skipped="0" tests="2" time="1.92" timestamp="2024-12-31 06:16:03"><testcase name="User fetch all books successfully"/><testcase name="Admin fetch all books successfully"/></testsuite>

@@ -36,7 +36,7 @@ public class LibraryUserGetTest extends BaseTest {
         Type bookListType = new TypeToken<List<Book>>() {}.getType();
         RequestHelper requestHelper = new RequestHelper( BASE_URI);
         response = requestHelper
-                .withEndpoint(GET_BOOKS_ENDPOINT) // No health check endpoint available, so using "/books" as a health check endpoint
+                .withEndpoint(GET_BOOKS_ENDPOINT) 
                 .withAuth(USER_USERNAME, USER_PASSWORD)
                 .sendRequest("GET");
         bookList = response.body().as(bookListType);
