@@ -1,4 +1,4 @@
-target/
+IT-Quality-Assurance-Assignment-API-Testing/target/
 build
 out
 .gradle
@@ -13,3 +13,6 @@ buildNumber.properties
 .idea
 *.iml
 .DS_Store
+.idea/misc.xml
+.idea/workspace.xml
+.vscode/settings.json
