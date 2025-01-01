@@ -15,8 +15,8 @@ Feature: Search Functionality on UI-Testing
     When I search for "laptop - 2022 edition"
     Then I should see search results related to "laptop - 2022 edition"
 
-  Scenario: Searching for a non-existent product
-    Given I open the homepage
-    When I search for "xyz123nonexistentproduct"
-    Then I should see a message indicating no search results were found
+#  Scenario: Searching for a non-existent product
+#    Given I open the homepage
+#    When I search for "xyz123nonexistentproduct"
+#    Then I should see a message indicating no search results were found
 

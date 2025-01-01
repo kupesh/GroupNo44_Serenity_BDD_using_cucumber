@@ -1,4 +1,8 @@
-steps/SearchSteps.class
-pages/HomePage.class
-config/Constants.class
-runner/CucumberTest.class
+pages\ProductPage.class
+pages\CartPage.class
+pages\HomePage.class
+config\Constants.class
+steps\SearchSteps.class
+pages\ProductDescriptivePage.class
+steps\CartSteps.class
+runner\CucumberTest.class

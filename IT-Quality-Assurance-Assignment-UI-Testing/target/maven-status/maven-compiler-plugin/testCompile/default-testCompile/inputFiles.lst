@@ -1,4 +1,8 @@
-/Users/udanakodikara/Documents/UOM/Level 4/ITQA/Group Project/Main Project/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/java/steps/SearchSteps.java
-/Users/udanakodikara/Documents/UOM/Level 4/ITQA/Group Project/Main Project/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/java/pages/HomePage.java
-/Users/udanakodikara/Documents/UOM/Level 4/ITQA/Group Project/Main Project/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/java/config/Constants.java
-/Users/udanakodikara/Documents/UOM/Level 4/ITQA/Group Project/Main Project/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/java/runner/CucumberTest.java
+C:\Users\USER\Desktop\L4S1\QA_Assignment\1\GroupNo44_Serenity_BDD_using_cucumber\IT-Quality-Assurance-Assignment-UI-Testing\src\test\java\pages\HomePage.java
+C:\Users\USER\Desktop\L4S1\QA_Assignment\1\GroupNo44_Serenity_BDD_using_cucumber\IT-Quality-Assurance-Assignment-UI-Testing\src\test\java\pages\ProductDescriptivePage.java
+C:\Users\USER\Desktop\L4S1\QA_Assignment\1\GroupNo44_Serenity_BDD_using_cucumber\IT-Quality-Assurance-Assignment-UI-Testing\src\test\java\pages\ProductPage.java
+C:\Users\USER\Desktop\L4S1\QA_Assignment\1\GroupNo44_Serenity_BDD_using_cucumber\IT-Quality-Assurance-Assignment-UI-Testing\src\test\java\pages\CartPage.java
+C:\Users\USER\Desktop\L4S1\QA_Assignment\1\GroupNo44_Serenity_BDD_using_cucumber\IT-Quality-Assurance-Assignment-UI-Testing\src\test\java\steps\SearchSteps.java
+C:\Users\USER\Desktop\L4S1\QA_Assignment\1\GroupNo44_Serenity_BDD_using_cucumber\IT-Quality-Assurance-Assignment-UI-Testing\src\test\java\config\Constants.java
+C:\Users\USER\Desktop\L4S1\QA_Assignment\1\GroupNo44_Serenity_BDD_using_cucumber\IT-Quality-Assurance-Assignment-UI-Testing\src\test\java\runner\CucumberTest.java
+C:\Users\USER\Desktop\L4S1\QA_Assignment\1\GroupNo44_Serenity_BDD_using_cucumber\IT-Quality-Assurance-Assignment-UI-Testing\src\test\java\steps\CartSteps.java
