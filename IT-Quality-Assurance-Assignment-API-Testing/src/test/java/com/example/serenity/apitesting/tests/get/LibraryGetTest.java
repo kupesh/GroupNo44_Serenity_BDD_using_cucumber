@@ -1,4 +1,4 @@
-package com.example.serenity.apitesting.tests;
+package com.example.serenity.apitesting.tests.get;
 
 import com.example.serenity.apitesting.base.BaseTest;
 import com.example.serenity.apitesting.models.Book;
@@ -16,24 +16,28 @@ import static org.hamcrest.Matchers.*;
 import java.lang.reflect.Type;
 import java.util.List;
 
-public class LibraryAdminGetTest extends BaseTest {
+public class LibraryGetTest extends BaseTest {
 
     private static List<Book> bookList;
     private static Response response;
 
-
     @When("Admin fetch all books with valid credentials")
-    public void fetchAllBooksWithValidCredentials() {
+    public void fetchAllBooksWithValidCredentialsAdmin() {
         Type bookListType = new TypeToken<List<Book>>() {}.getType();
         RequestHelper requestHelper = new RequestHelper( BASE_URI);
-        response = requestHelper
-                .withEndpoint(GET_BOOKS_ENDPOINT) // No health check endpoint available, so using "/books" as a health check endpoint
-                .withAuth(ADMIN_USERNAME, ADMIN_PASSWORD)
-                .sendRequest("GET");
+        response = requestHelper.fetchBook(GET_BOOKS_ENDPOINT, ADMIN_USERNAME, ADMIN_PASSWORD);
         bookList = response.body().as(bookListType);
     }
 
-    @Then("the response code for admin should be {int}")
+    @When("User fetch all books with valid credentials")
+    public void fetchAllBooksWithValidCredentialsUser() {
+        Type bookListType = new TypeToken<List<Book>>() {}.getType();
+        RequestHelper requestHelper = new RequestHelper( BASE_URI);
+        response = requestHelper.fetchBook(GET_BOOKS_ENDPOINT, USER_USERNAME, USER_PASSWORD);
+        bookList = response.body().as(bookListType);
+    }
+
+    @Then("the response code should be {int}")
     public void verifyResponseCode(int statusCode) {
         assertThat(response.getStatusCode(), is(statusCode));
     }

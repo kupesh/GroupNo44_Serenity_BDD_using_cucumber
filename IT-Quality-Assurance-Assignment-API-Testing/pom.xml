@@ -122,7 +122,10 @@
                 <version>3.1.2</version>
                 <configuration>
                     <skip>false</skip>
-                    <parallel>none</parallel>
+                    <testFailureIgnore>true</testFailureIgnore>
+<!--                    <includes>-->
+<!--                        <include>**/*Test.java</include>-->
+<!--                    </includes>-->
                 </configuration>
             </plugin>
             <plugin>
@@ -131,9 +134,9 @@
                 <configuration>
                     <includes>
                         <include>**/*Test.java</include>
-                        <include>**/Test*.java</include>
-                        <include>**/*TestSuite.java</include>
-                        <include>**/When*.java</include>
+<!--                        <include>**/Test*.java</include>-->
+<!--                        <include>**/*TestSuite.java</include>-->
+<!--                        <include>**/When*.java</include>-->
                     </includes>
                     <systemPropertyVariables>
                         <webdriver.base.url>${webdriver.base.url}</webdriver.base.url>

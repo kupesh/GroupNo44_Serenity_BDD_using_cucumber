@@ -85,13 +85,13 @@ Scenario: User fetch all books successfully                &amp#27;[90m# feature
 
 Scenario: Admin fetch all books successfully        &amp#27;[90m# features/apiTesting/library.feature:7&amp#27;[0m
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe library API is running using user&amp#27;[0m              &amp#27;[90m# com.example.serenity.apitesting.tests.LibraryUserGetTest.theLibraryAPIIsRunning()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe library API is running using admin&amp#27;[0m      &amp#27;[90m# com.example.serenity.apitesting.tests.LibraryAdminGetTest.theLibraryAPIIsRunning()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe library API is running using admin&amp#27;[0m      &amp#27;[90m# com.example.serenity.apitesting.tests.get.LibraryGetTest.theLibraryAPIIsRunning()&amp#27;[0m
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser fetch all books with valid credentials&amp#27;[0m         &amp#27;[90m# com.example.serenity.apitesting.tests.LibraryUserGetTest.fetchAllBooksWithValidCredentials()&amp#27;[0m
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin fetch all books with valid credentials&amp#27;[0m &amp#27;[90m# com.example.serenity.apitesting.tests.LibraryAdminGetTest.fetchAllBooksWithValidCredentials()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response code should be &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m              &amp#27;[90m# com.example.serenity.apitesting.tests.LibraryAdminGetTest.verifyResponseCode(int)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mAdmin fetch all books with valid credentials&amp#27;[0m &amp#27;[90m# com.example.serenity.apitesting.tests.get.LibraryGetTest.fetchAllBooksWithValidCredentials()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response code should be &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m              &amp#27;[90m# com.example.serenity.apitesting.tests.get.LibraryGetTest.verifyResponseCode(int)&amp#27;[0m
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe response code for user should be &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m            &amp#27;[90m# com.example.serenity.apitesting.tests.LibraryUserGetTest.verifyResponseCode(int)&amp#27;[0m
   &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response should contain a list of books for user&amp#27;[0m &amp#27;[90m# com.example.serenity.apitesting.tests.LibraryUserGetTest.verifyResponseContainsBooks()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response should contain a list of books&amp#27;[0m   &amp#27;[90m# com.example.serenity.apitesting.tests.LibraryAdminGetTest.verifyResponseContainsBooks()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mthe response should contain a list of books&amp#27;[0m   &amp#27;[90m# com.example.serenity.apitesting.tests.get.LibraryGetTest.verifyResponseContainsBooks()&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/Users/krishihanravi/.m2/repository/net/bytebuddy/byte-buddy-agent/1.15.2/byte-buddy-agent-1.15.2.jar)
 WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning

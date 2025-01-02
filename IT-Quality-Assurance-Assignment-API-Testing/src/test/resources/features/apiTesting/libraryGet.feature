@@ -6,31 +6,49 @@ Feature: Library API GET Operations
   Background:
     Given the library API is running and a book is created
 
-  Scenario: Admin successfully fetches all books from the library
-    When Admin fetch all books with valid credentials
-    Then the response code for admin should be 200
+  Scenario Outline: <role> successfully fetches all books from the library
+    When <role> fetch all books with valid credentials
+    Then the response code should be 200
     And the response should contain a list of books
+    Examples:
+      | role  |
+      | Admin |
+      | User  |
 
-  Scenario: Registered user tries to fetch all books
-    When the registered user fetches all books
-    Then the response code for registered user should be 200
-    And the response should contain a list of books for user
+  Scenario Outline: Fetch books <authentication>
+    When User fetches all books <authentication>
+    Then Then the response code should be 401
 
-  Scenario: Non-registered user tries to fetch all books
-    When the non-registered user fetches all books
-    Then the response code for non-registered should be 401
+    Examples:
+      | authentication                      |
+      | without providing authentication    |
+      | with providing invalid credentials  |
 
-  Scenario: Fetch books without authentication
-    When the user fetches all books without providing authentication
-    Then the response code without authentication should be 401
+  Scenario Outline: Fetch a specific book by ID
+    When <role> fetch the book with ID <bookId> using valid credentials
+    Then the response code when a book exists should be 200
+    And the response should contain the book <bookId> details
 
-  Scenario: Admin fetch a specific book by ID
-    When Admin fetch the book with ID 6 using valid credentials
-    Then the response code when a book exist should be 200
-    And the response should contain the book 6 details
+    Examples:
+      | role  | bookId |
+      | Admin | 1      |
+      | User  | 1      |
 
-#  Scenario: Fetch a non-existent book
-#    When I fetch the book with ID 9999 using valid credentials
-#    Then the response code should be 404
-#    And the response message should indicate the book was not found
+  Scenario Outline: Fetch a non-existent book
+    When <role> fetch a non-exist book with ID <bookId> using valid credentials
+    Then the response code when a book does not exists should be 404
+    And the response message should indicate the book was not found
 
+    Examples:
+      | role  | bookId |
+      | Admin | 999      |
+      | User  | 999      |
+
+  Scenario Outline: Fetch book by ID <authentication>
+    When User fetches a book with ID 1 <authentication>
+    Then the response code for book Id 1 should be 401
+
+    Examples:
+      | authentication                      |
+      | without providing authentication    |
+      | with providing invalid credentials  |
