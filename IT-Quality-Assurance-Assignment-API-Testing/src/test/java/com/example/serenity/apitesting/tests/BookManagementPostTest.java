@@ -35,11 +35,21 @@ public class BookManagementPostTest extends BaseTest {
     }
 
     @Given("the library API is running for book creation using admin")
-    public void theLibraryAPIIsRunning() {
+    public void theLibraryAPIIsRunningAdmin() {
         requestHelper = new RequestHelper(BASE_URI);
         Response healthResponse = requestHelper
                 .withEndpoint(GET_BOOKS_ENDPOINT)
                 .withAuth(ADMIN_USERNAME, ADMIN_PASSWORD)
+                .sendRequest("GET");
+        assertThat(healthResponse.getStatusCode(), is(200));
+    }
+
+    @Given("the library API is running for book creation using user")
+    public void theLibraryAPIIsRunningUser() {
+        requestHelper = new RequestHelper(BASE_URI);
+        Response healthResponse = requestHelper
+                .withEndpoint(GET_BOOKS_ENDPOINT)
+                .withAuth(USER_USERNAME, USER_PASSWORD)
                 .sendRequest("GET");
         assertThat(healthResponse.getStatusCode(), is(200));
     }
