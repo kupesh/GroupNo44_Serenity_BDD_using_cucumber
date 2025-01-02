@@ -1,16 +1,15 @@
 Feature: Library API Testing
-  As a user of the library API,
-  I want to perform CRUD operations,
-  So that I can manage the books in the library effectively.
+  As a library admin,
+  I want to manage books in the library via the API,
+  So that I can efficiently handle library operations.
 
-
-  Scenario: Admin fetch all books successfully
+  Scenario: Admin successfully fetches all books from the library
     Given the library API is running using admin
     When Admin fetch all books with valid credentials
     Then the response code should be 200
     And the response should contain a list of books
 
-  Scenario: User fetch all books successfully
+  Scenario: User successfully fetches all books from the library
     Given the library API is running using user
     When User fetch all books with valid credentials
     Then the response code for user should be 200

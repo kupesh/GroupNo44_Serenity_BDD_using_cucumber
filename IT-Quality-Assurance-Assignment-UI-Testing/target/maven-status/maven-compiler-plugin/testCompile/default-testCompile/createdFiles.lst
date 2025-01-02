@@ -1,0 +1,8 @@
+<<<<<<< HEAD
+=======
+pages/HomePage.class
+steps/SearchSteps.class
+pages/LoginPage.class
+config/Constants.class
+runner/CucumberTest.class
+>>>>>>> 60c9fdeab0613ab065450838b6f8741e957d4cbb
