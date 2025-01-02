@@ -8,4 +8,5 @@ public class Constants {
     public static final String BASE_URL = "https://www.singersl.com";
     public static final String HOME_PAGE_ENDPOINT = "/";
     public static final String PRODUCT_PAGE_ENDPOINT = "/products";
+    public static final String PRODUCT_DETAILS_ENDPOINT = "/product/";
 }
