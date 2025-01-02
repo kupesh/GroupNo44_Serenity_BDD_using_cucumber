@@ -31,7 +31,7 @@ public class ProductPage extends PageObject {
     }
 
     public int getCartItemCount() throws InterruptedException {
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         WebElementFacade cartBadge = find(By.cssSelector(CART_BADGE_SELECTOR));
         String cartCountText = cartBadge.getText();
         try {
