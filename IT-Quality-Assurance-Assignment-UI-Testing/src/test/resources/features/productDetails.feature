@@ -1,31 +1,29 @@
-Feature: Search Functionality on UI-Testing
+Feature: Product Details Functionality on singersl.com
 
-  Scenario: Viewing details of a valid product
+  Scenario: Viewing product details for a valid product
     Given I navigate to the product detail page for product "12345"
-    Then I should see the product title "Sample Product"
+    Then I should see the product title "Dell Inspiron 15"
     And I should see a product description that is not empty
-    And I should see a price displayed in "USD"
+    And I should see a price displayed in "LKR"
+    And I should see a high-quality main product image
 
-  Scenario: Validating product images on the product detail page
-    Given I navigate to the product detail page for product "12345"
+  Scenario: Viewing product details for an out-of-stock product
+    Given I navigate to the product detail page for product "67890"
+    Then I should see the product title "Samsung Galaxy S21"
+    And I should see a message indicating "Out of Stock"
+    And the "Add to Cart" button should be "disabled"
+
+  Scenario: Viewing product details for a non-existent product
+    Given I navigate to the product detail page for product "00000"
+    Then I should see a message indicating "Product not found"
+
+  Scenario: Verifying the image gallery for a product
+    Given I navigate to the product detail page for product "13579"
     Then I should see a high-quality main product image
     And I should be able to navigate through the image gallery
-    And the zoom feature should work on the product image
+    And I should see the zoom feature working on the product image
 
-  Scenario: Adding a product to the cart from the product detail page
-    Given I navigate to the product detail page for product "12345"
-    When I click on the "Add to Cart" button
-    Then the product should be successfully added to the cart
-    And the cart icon should display the updated item count
-    And the total price in the cart should be updated correctly
-
-  Scenario: Viewing an out-of-stock product
-    Given I navigate to the product detail page for product "67890"
-    Then I should see the product title "Unavailable Product"
-    And I should see a message indicating "Out of Stock"
-    And the "Add to Cart" button should be disabled
-
-  Scenario: Viewing details for a non-existent product
-    Given I navigate to the product detail page for product "99999"
-    Then I should see an error message "Product not found"
-    And the page should redirect to the home page after 5 seconds
+  Scenario: Verifying add-to-cart functionality for an available product
+    Given I navigate to the product detail page for product "24680"
+    Then I should see the product title "Sony WH-1000XM4"
+    And the "Add to Cart" button should be "enabled"

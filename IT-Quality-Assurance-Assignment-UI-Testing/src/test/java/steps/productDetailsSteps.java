@@ -1,12 +1,9 @@
 package steps;
 
-import config.Constants;
 import net.serenitybdd.annotations.Steps;
 import pages.ProductDetailsPage;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-
 import static org.junit.Assert.assertTrue;
 
 public class ProductDetailsSteps {
@@ -14,11 +11,9 @@ public class ProductDetailsSteps {
     @Steps
     private ProductDetailsPage productDetailsPage;
 
-    final String baseUrl = Constants.BASE_URL + Constants.PRODUCT_DETAILS_ENDPOINT;
-
     @Given("I navigate to the product detail page for product {string}")
     public void navigateToProductDetailPage(String productId) {
-        productDetailsPage.openProductDetailPage(productId);
+        productDetailsPage.openProductDetailPage("https://www.singersl.com/products/" + productId);
     }
 
     @Then("I should see the product title {string}")
@@ -45,17 +40,16 @@ public class ProductDetailsSteps {
                 productDetailsPage.verifyImageGalleryIsDisplayed());
     }
 
-    @Then("I should see the zoom feature working on the product image")
-    public void verifyZoomFeature() {
-        // Add implementation if a zoom-specific method is available.
-        assertTrue("Zoom feature verification needs to be implemented.",
-                productDetailsPage.verifyImageGalleryIsDisplayed()); // Placeholder
-    }
-
     @Then("I should be able to navigate through the image gallery")
     public void verifyImageGalleryNavigation() {
-        assertTrue("Image gallery navigation verification needs to be implemented.",
-                productDetailsPage.verifyImageGalleryIsDisplayed()); // Placeholder
+        assertTrue("Image gallery navigation is not functional.",
+                productDetailsPage.verifyImageGalleryNavigation());
+    }
+
+    @Then("I should see the zoom feature working on the product image")
+    public void verifyZoomFeature() {
+        assertTrue("Zoom feature verification needs to be implemented.",
+                productDetailsPage.verifyZoomFeature());
     }
 
     @Then("I should see a message indicating {string}")
