@@ -1,5 +1,0 @@
-pages/HomePage.class
-steps/SearchSteps.class
-pages/LoginPage.class
-config/Constants.class
-runner/CucumberTest.class
