@@ -5,58 +5,52 @@ import net.serenitybdd.core.pages.WebElementFacade;
 import org.openqa.selenium.By;
 
 import java.util.List;
+import java.util.Objects;
+
+import static org.junit.Assert.assertTrue;
 
 public class ProductPage extends PageObject {
 
-    final String addToCartButtonSelector = "/html[1]/body[1]/div[3]/main[1]/div[1]/div[4]/div[2]/div[1]/div[1]/div[4]/div[2]/div[1]/div[1]/div[1]/div[4]/div[2]/div[2]/a[1]";
-    final String addToCartAlertSelector = ".add-to-card-alert";
-    final String cartBadgeSelector = ".cart-block-count";
+    private static final String ADD_TO_CART_BUTTON_SELECTOR = "//a[contains(@class, 'cart-link-btn')]";
+    private static final String QUANTITY_FIELD_ID = "quantity";
+    private static final String CART_BADGE_SELECTOR = ".cart-block-count";
+    private static final String LOGIN_PROMPT_ID = "login-prompt";
 
     public void openProductPage(String baseUrl) {
         openAt(baseUrl);
     }
 
     public void clickAddToCartButton() {
-        List<WebElementFacade> addToCartButtons = findAll(By.xpath("//a[contains(@class, 'cart-link-btn')]"));
-
+        List<WebElementFacade> addToCartButtons = findAll(By.xpath(ADD_TO_CART_BUTTON_SELECTOR));
         if (!addToCartButtons.isEmpty()) {
-            WebElementFacade firstAddToCartButton = addToCartButtons.get(0); // Get the first button
-
-            if (firstAddToCartButton.isEnabled() && firstAddToCartButton.isDisplayed()) {
-                firstAddToCartButton.click();
-            } else {
-                System.out.println("The first Add to Cart button is not enabled or visible.");
-            }
+            WebElementFacade firstAddToCartButton = addToCartButtons.get(0);
+            firstAddToCartButton.waitUntilEnabled().waitUntilVisible().click();
         } else {
-            System.out.println("No Add to Cart buttons found on the page.");
+            throw new AssertionError("No 'Add to Cart' buttons found on the page.");
         }
     }
 
-    public void setQuantity(String quantity) {
-        WebElementFacade quantityField = find(By.id("quantity"));
-        quantityField.waitUntilVisible().clear();
-        quantityField.type(quantity);
+    public int getCartItemCount() throws InterruptedException {
+        Thread.sleep(3000);
+        WebElementFacade cartBadge = find(By.cssSelector(CART_BADGE_SELECTOR));
+        String cartCountText = cartBadge.getText();
+        try {
+            return Integer.parseInt(cartCountText);
+        } catch (NumberFormatException e) {
+            throw new AssertionError("Cart badge does not contain a valid number: " + cartCountText);
+        }
     }
 
-    public int getCartItemCount() throws InterruptedException {
-        System.out.println("Getting cart item count");
-        Thread.sleep(5000);
-        WebElementFacade cartBadge = find(By.cssSelector(cartBadgeSelector));
-        System.out.println("Getting cart item count : "+ Integer.parseInt(cartBadge.getText()));
-        return Integer.parseInt(cartBadge.getText());
+    public boolean isLoginPromptDisplayed() {
+        WebElementFacade loginPrompt = find(By.id(LOGIN_PROMPT_ID));
+        return loginPrompt.waitUntilVisible().isVisible();
     }
 
     public boolean checkVisibility(String message) {
-        WebElementFacade messageElement = find(By.xpath("//*[contains(@class, '" + "messages-default" + "')]"));
-        return messageElement != null && messageElement.isDisplayed();
+        return Objects.requireNonNull(getDriver().getPageSource()).contains(message);
     }
 
     public String getPageSource() {
         return getDriver().getPageSource();
-    }
-
-    public boolean isLoginPromptDisplayed() {
-        WebElementFacade loginPrompt = find(By.id("login-prompt"));
-        return loginPrompt.isVisible();
     }
 }

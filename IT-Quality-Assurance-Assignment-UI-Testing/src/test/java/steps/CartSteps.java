@@ -10,6 +10,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import io.cucumber.java.en.Then;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 public class CartSteps {
@@ -73,7 +74,7 @@ public class CartSteps {
 
     @And("the cart should show {int} item(s)")
     public void verifyCartItems(int itemCount) throws InterruptedException {
-        assertTrue(productPage.getCartItemCount() == itemCount);
+        assertEquals(productPage.getCartItemCount(), itemCount);
     }
 
     @Then("I should be prompted to log in or continue as a guest")
