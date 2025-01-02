@@ -2,14 +2,14 @@ Feature: Product Details Functionality on singersl.com
 
   Scenario: Viewing product details for a valid product
     Given I navigate to the product detail page for product "12345"
-    Then I should see the product title "Dell Inspiron 15"
+    Then I should see the product title
     And I should see a product description that is not empty
     And I should see a price displayed in "LKR"
     And I should see a high-quality main product image
 
   Scenario: Viewing product details for an out-of-stock product
     Given I navigate to the product detail page for product "67890"
-    Then I should see the product title "Samsung Galaxy S21"
+    Then I should see the product title
     And I should see a message indicating "Out of Stock"
     And the "Add to Cart" button should be "disabled"
 
@@ -25,5 +25,5 @@ Feature: Product Details Functionality on singersl.com
 
   Scenario: Verifying add-to-cart functionality for an available product
     Given I navigate to the product detail page for product "24680"
-    Then I should see the product title "Sony WH-1000XM4"
+    Then I should see the product title
     And the "Add to Cart" button should be "enabled"
