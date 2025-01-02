@@ -1,0 +1,4 @@
+$(document).ready(function() {
+CucumberHTML.timelineItems.pushArray([{"id":"b3569280-f214-4af8-b5ff-f3478b033152","feature":"Library API Testing","scenario":"Admin fetch all books successfully","start":1735649163504,"group":36,"content":"","tags":"","end":1735649164470,"className":"passed"},{"id":"f47424bf-1b08-4fc1-86bc-dba2801f5e35","feature":"Library API Testing","scenario":"User fetch all books successfully","start":1735649163504,"group":37,"content":"","tags":"","end":1735649164470,"className":"passed"}]);
+CucumberHTML.timelineGroups.pushArray([{"id":36,"content":"Thread[#36,ForkJoinPool-2-worker-2,5,main]"},{"id":37,"content":"Thread[#37,ForkJoinPool-2-worker-3,5,main]"}]);
+});
