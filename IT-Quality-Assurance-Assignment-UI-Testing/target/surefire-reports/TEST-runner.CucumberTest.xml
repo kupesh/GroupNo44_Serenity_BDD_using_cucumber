@@ -1,0 +1,1015 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runner.CucumberTest" time="262.424" tests="11" errors="7" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\test-classes;D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\classes;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-core\4.2.8\serenity-core-4.2.8.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-model\4.2.8\serenity-model-4.2.8.jar;C:\Users\hp\.m2\repository\org\apache\commons\commons-text\1.12.0\commons-text-1.12.0.jar;C:\Users\hp\.m2\repository\commons-net\commons-net\3.11.1\commons-net-3.11.1.jar;C:\Users\hp\.m2\repository\com\google\guava\guava\33.3.1-jre\guava-33.3.1-jre.jar;C:\Users\hp\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\hp\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\hp\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\hp\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\hp\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\hp\.m2\repository\org\jsoup\jsoup\1.15.4\jsoup-1.15.4.jar;C:\Users\hp\.m2\repository\com\thoughtworks\xstream\xstream\1.4.21\xstream-1.4.21.jar;C:\Users\hp\.m2\repository\io\github\x-stream\mxparser\1.2.2\mxparser-1.2.2.jar;C:\Users\hp\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\hp\.m2\repository\com\opencsv\opencsv\5.9\opencsv-5.9.jar;C:\Users\hp\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\hp\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\hp\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\hp\.m2\repository\com\typesafe\config\1.4.3\config-1.4.3.jar;C:\Users\hp\.m2\repository\org\imgscalr\imgscalr-lib\4.2\imgscalr-lib-4.2.jar;C:\Users\hp\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\hp\.m2\repository\org\freemarker\freemarker\2.3.33\freemarker-2.3.33.jar;C:\Users\hp\.m2\repository\io\github\classgraph\classgraph\4.8.157\classgraph-4.8.157.jar;C:\Users\hp\.m2\repository\com\github\ben-manes\caffeine\caffeine\2.9.2\caffeine-2.9.2.jar;C:\Users\hp\.m2\repository\org\ehcache\ehcache\3.10.8\ehcache-3.10.8.jar;C:\Users\hp\.m2\repository\javax\cache\cache-api\1.1.0\cache-api-1.1.0.jar;C:\Users\hp\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;C:\Users\hp\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.2\byte-buddy-agent-1.15.2.jar;C:\Users\hp\.m2\repository\org\objenesis\objenesis\3.4\objenesis-3.4.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-all\0.64.8\flexmark-all-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark\0.64.8\flexmark-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-abbreviation\0.64.8\flexmark-ext-abbreviation-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-admonition\0.64.8\flexmark-ext-admonition-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-anchorlink\0.64.8\flexmark-ext-anchorlink-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-aside\0.64.8\flexmark-ext-aside-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-attributes\0.64.8\flexmark-ext-attributes-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-autolink\0.64.8\flexmark-ext-autolink-0.64.8.jar;C:\Users\hp\.m2\repository\org\nibor\autolink\autolink\0.6.0\autolink-0.6.0.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-definition\0.64.8\flexmark-ext-definition-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-emoji\0.64.8\flexmark-ext-emoji-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-enumerated-reference\0.64.8\flexmark-ext-enumerated-reference-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-escaped-character\0.64.8\flexmark-ext-escaped-character-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-footnotes\0.64.8\flexmark-ext-footnotes-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-issues\0.64.8\flexmark-ext-gfm-issues-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.64.8\flexmark-ext-gfm-strikethrough-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.64.8\flexmark-ext-gfm-tasklist-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-users\0.64.8\flexmark-ext-gfm-users-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-gitlab\0.64.8\flexmark-ext-gitlab-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-front-matter\0.64.8\flexmark-ext-jekyll-front-matter-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-tag\0.64.8\flexmark-ext-jekyll-tag-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-media-tags\0.64.8\flexmark-ext-media-tags-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-macros\0.64.8\flexmark-ext-macros-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-ins\0.64.8\flexmark-ext-ins-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-xwiki-macros\0.64.8\flexmark-ext-xwiki-macros-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-superscript\0.64.8\flexmark-ext-superscript-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-toc\0.64.8\flexmark-ext-toc-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-typographic\0.64.8\flexmark-ext-typographic-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-wikilink\0.64.8\flexmark-ext-wikilink-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.64.8\flexmark-ext-yaml-front-matter-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-youtube-embedded\0.64.8\flexmark-ext-youtube-embedded-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-html2md-converter\0.64.8\flexmark-html2md-converter-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-jira-converter\0.64.8\flexmark-jira-converter-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-pdf-converter\0.64.8\flexmark-pdf-converter-0.64.8.jar;C:\Users\hp\.m2\repository\com\openhtmltopdf\openhtmltopdf-core\1.0.10\openhtmltopdf-core-1.0.10.jar;C:\Users\hp\.m2\repository\com\openhtmltopdf\openhtmltopdf-pdfbox\1.0.10\openhtmltopdf-pdfbox-1.0.10.jar;C:\Users\hp\.m2\repository\org\apache\pdfbox\pdfbox\2.0.24\pdfbox-2.0.24.jar;C:\Users\hp\.m2\repository\org\apache\pdfbox\fontbox\2.0.24\fontbox-2.0.24.jar;C:\Users\hp\.m2\repository\org\apache\pdfbox\xmpbox\2.0.24\xmpbox-2.0.24.jar;C:\Users\hp\.m2\repository\de\rototor\pdfbox\graphics2d\0.32\graphics2d-0.32.jar;C:\Users\hp\.m2\repository\com\openhtmltopdf\openhtmltopdf-rtl-support\1.0.10\openhtmltopdf-rtl-support-1.0.10.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-profile-pegdown\0.64.8\flexmark-profile-pegdown-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-ast\0.64.8\flexmark-util-ast-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-builder\0.64.8\flexmark-util-builder-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-collection\0.64.8\flexmark-util-collection-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-data\0.64.8\flexmark-util-data-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-dependency\0.64.8\flexmark-util-dependency-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-format\0.64.8\flexmark-util-format-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-html\0.64.8\flexmark-util-html-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-misc\0.64.8\flexmark-util-misc-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-options\0.64.8\flexmark-util-options-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-sequence\0.64.8\flexmark-util-sequence-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-visitor\0.64.8\flexmark-util-visitor-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-youtrack-converter\0.64.8\flexmark-youtrack-converter-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-resizable-image\0.64.8\flexmark-ext-resizable-image-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.64.8\flexmark-ext-tables-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util\0.64.8\flexmark-util-0.64.8.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-reports\4.2.8\serenity-reports-4.2.8.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-stats\4.2.8\serenity-stats-4.2.8.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-reports-configuration\4.2.8\serenity-reports-configuration-4.2.8.jar;C:\Users\hp\.m2\repository\com\ibm\icu\icu4j\72.1\icu4j-72.1.jar;C:\Users\hp\.m2\repository\es\nitaur\markdown\txtmark\0.16\txtmark-0.16.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-report-resources\4.2.8\serenity-report-resources-4.2.8.jar;C:\Users\hp\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\hp\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\hp\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.1\jackson-core-2.18.1.jar;C:\Users\hp\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.1\jackson-databind-2.18.1.jar;C:\Users\hp\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.1\jackson-annotations-2.18.1.jar;C:\Users\hp\.m2\repository\commons-codec\commons-codec\1.17.1\commons-codec-1.17.1.jar;C:\Users\hp\.m2\repository\commons-io\commons-io\2.17.0\commons-io-2.17.0.jar;C:\Users\hp\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\hp\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\hp\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-java\4.26.0\selenium-java-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.26.0\selenium-devtools-v128-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.26.0\selenium-devtools-v129-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v130\4.26.0\selenium-devtools-v130-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.26.0\selenium-devtools-v85-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.26.0\selenium-remote-driver-4.26.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-api\1.43.0\opentelemetry-api-1.43.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-context\1.43.0\opentelemetry-context-1.43.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.43.0\opentelemetry-exporter-logging-1.43.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.43.0\opentelemetry-sdk-common-1.43.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.43.0\opentelemetry-sdk-extension-autoconfigure-spi-1.43.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.43.0\opentelemetry-sdk-extension-autoconfigure-1.43.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.43.0-alpha\opentelemetry-api-incubator-1.43.0-alpha.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.43.0\opentelemetry-sdk-trace-1.43.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.43.0\opentelemetry-sdk-1.43.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.43.0\opentelemetry-sdk-metrics-1.43.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.43.0\opentelemetry-sdk-logs-1.43.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-os\4.26.0\selenium-os-4.26.0.jar;C:\Users\hp\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.26.0\selenium-safari-driver-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-api\4.26.0\selenium-api-4.26.0.jar;C:\Users\hp\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-support\4.26.0\selenium-support-4.26.0.jar;C:\Users\hp\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-json\4.26.0\selenium-json-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.26.0\selenium-chrome-driver-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.26.0\selenium-chromium-driver-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.26.0\selenium-manager-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.26.0\selenium-firefox-driver-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-http\4.26.0\selenium-http-4.26.0.jar;C:\Users\hp\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.26.0\selenium-edge-driver-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.26.0\selenium-ie-driver-4.26.0.jar;C:\Users\hp\.m2\repository\org\htmlunit\htmlunit\4.5.0\htmlunit-4.5.0.jar;C:\Users\hp\.m2\repository\org\apache\httpcomponents\httpmime\4.5.14\httpmime-4.5.14.jar;C:\Users\hp\.m2\repository\org\htmlunit\htmlunit-core-js\4.5.0\htmlunit-core-js-4.5.0.jar;C:\Users\hp\.m2\repository\org\htmlunit\neko-htmlunit\4.5.0\neko-htmlunit-4.5.0.jar;C:\Users\hp\.m2\repository\org\htmlunit\htmlunit-cssparser\4.5.0\htmlunit-cssparser-4.5.0.jar;C:\Users\hp\.m2\repository\org\htmlunit\htmlunit-xpath\4.5.0\htmlunit-xpath-4.5.0.jar;C:\Users\hp\.m2\repository\org\htmlunit\htmlunit-csp\4.5.0\htmlunit-csp-4.5.0.jar;C:\Users\hp\.m2\repository\org\htmlunit\htmlunit-websocket-client\4.5.0\htmlunit-websocket-client-4.5.0.jar;C:\Users\hp\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\htmlunit3-driver\4.25.0\htmlunit3-driver-4.25.0.jar;C:\Users\hp\.m2\repository\io\appium\java-client\9.3.0\java-client-9.3.0.jar;C:\Users\hp\.m2\repository\org\apache\groovy\groovy\4.0.23\groovy-4.0.23.jar;C:\Users\hp\.m2\repository\net\sf\opencsv\opencsv\2.3\opencsv-2.3.jar;C:\Users\hp\.m2\repository\org\apache\commons\commons-lang3\3.17.0\commons-lang3-3.17.0.jar;C:\Users\hp\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\hp\.m2\repository\org\fluentlenium\fluentlenium-core\0.10.2\fluentlenium-core-0.10.2.jar;C:\Users\hp\.m2\repository\com\jhlabs\filters\2.0.235\filters-2.0.235.jar;C:\Users\hp\.m2\repository\com\paulhammant\ngwebdriver\1.2\ngwebdriver-1.2.jar;C:\Users\hp\.m2\repository\joda-time\joda-time\2.13.0\joda-time-2.13.0.jar;C:\Users\hp\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\hp\.m2\repository\com\google\jimfs\jimfs\1.3.0\jimfs-1.3.0.jar;C:\Users\hp\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\hp\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\hp\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\hp\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar;C:\Users\hp\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\hp\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\hp\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\hp\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-cucumber\4.2.8\serenity-cucumber-4.2.8.jar;C:\Users\hp\.m2\repository\io\cucumber\cucumber-core\7.20.1\cucumber-core-7.20.1.jar;C:\Users\hp\.m2\repository\io\cucumber\cucumber-gherkin\7.20.1\cucumber-gherkin-7.20.1.jar;C:\Users\hp\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.20.1\cucumber-gherkin-messages-7.20.1.jar;C:\Users\hp\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\hp\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\hp\.m2\repository\io\cucumber\testng-xml-formatter\0.2.0\testng-xml-formatter-0.2.0.jar;C:\Users\hp\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\hp\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\hp\.m2\repository\io\cucumber\datatable\7.20.1\datatable-7.20.1.jar;C:\Users\hp\.m2\repository\io\cucumber\cucumber-plugin\7.20.1\cucumber-plugin-7.20.1.jar;C:\Users\hp\.m2\repository\io\cucumber\docstring\7.20.1\docstring-7.20.1.jar;C:\Users\hp\.m2\repository\io\cucumber\html-formatter\21.7.0\html-formatter-21.7.0.jar;C:\Users\hp\.m2\repository\io\cucumber\junit-xml-formatter\0.5.0\junit-xml-formatter-0.5.0.jar;C:\Users\hp\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\hp\.m2\repository\io\cucumber\cucumber-java\7.20.1\cucumber-java-7.20.1.jar;C:\Users\hp\.m2\repository\io\cucumber\cucumber-junit\7.20.1\cucumber-junit-7.20.1.jar;C:\Users\hp\.m2\repository\org\apache\commons\commons-csv\1.12.0\commons-csv-1.12.0.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-screenplay\4.2.8\serenity-screenplay-4.2.8.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-screenplay-webdriver\4.2.8\serenity-screenplay-webdriver-4.2.8.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-ensure\4.2.8\serenity-ensure-4.2.8.jar;C:\Users\hp\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\2.0.21\kotlin-stdlib-2.0.21.jar;C:\Users\hp\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-junit5\4.2.8\serenity-junit5-4.2.8.jar;C:\Users\hp\.m2\repository\io\cucumber\tag-expressions\6.1.1\tag-expressions-6.1.1.jar;C:\Users\hp\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.1\junit-jupiter-params-5.11.1.jar;C:\Users\hp\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\hp\.m2\repository\org\junit\platform\junit-platform-launcher\1.11.3\junit-platform-launcher-1.11.3.jar;C:\Users\hp\.m2\repository\org\junit\platform\junit-platform-engine\1.11.3\junit-platform-engine-1.11.3.jar;C:\Users\hp\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\hp\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.20.1\cucumber-junit-platform-engine-7.20.1.jar;C:\Users\hp\.m2\repository\org\junit\platform\junit-platform-suite\1.11.3\junit-platform-suite-1.11.3.jar;C:\Users\hp\.m2\repository\org\junit\platform\junit-platform-suite-api\1.11.3\junit-platform-suite-api-1.11.3.jar;C:\Users\hp\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.11.3\junit-platform-suite-engine-1.11.3.jar;C:\Users\hp\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.11.3\junit-platform-suite-commons-1.11.3.jar;C:\Users\hp\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.11.3\junit-jupiter-engine-5.11.3.jar;C:\Users\hp\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.3\junit-jupiter-api-5.11.3.jar;C:\Users\hp\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\hp\.m2\repository\org\junit\platform\junit-platform-commons\1.11.3\junit-platform-commons-1.11.3.jar;C:\Users\hp\.m2\repository\org\junit\vintage\junit-vintage-engine\5.11.3\junit-vintage-engine-5.11.3.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-rest-assured\4.2.8\serenity-rest-assured-4.2.8.jar;C:\Users\hp\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\hp\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\hp\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\hp\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\hp\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\hp\.m2\repository\org\apache\groovy\groovy-json\4.0.23\groovy-json-4.0.23.jar;C:\Users\hp\.m2\repository\org\apache\groovy\groovy-xml\4.0.23\groovy-xml-4.0.23.jar;C:\Users\hp\.m2\repository\ch\qos\logback\logback-classic\1.5.15\logback-classic-1.5.15.jar;C:\Users\hp\.m2\repository\ch\qos\logback\logback-core\1.5.15\logback-core-1.5.15.jar;C:\Users\hp\.m2\repository\org\slf4j\slf4j-api\2.0.15\slf4j-api-2.0.15.jar;C:\Users\hp\.m2\repository\org\assertj\assertj-core\3.27.0\assertj-core-3.27.0.jar;C:\Users\hp\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Colombo"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\hp\AppData\Local\Temp\surefire16951413332554127790\surefirebooter-20250102104008117_3.jar C:\Users\hp\AppData\Local\Temp\surefire16951413332554127790 2025-01-02T10-40-07_989-jvmRun1 surefire-20250102104008117_1tmp surefire_0-20250102104008117_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\test-classes;D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\classes;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-core\4.2.8\serenity-core-4.2.8.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-model\4.2.8\serenity-model-4.2.8.jar;C:\Users\hp\.m2\repository\org\apache\commons\commons-text\1.12.0\commons-text-1.12.0.jar;C:\Users\hp\.m2\repository\commons-net\commons-net\3.11.1\commons-net-3.11.1.jar;C:\Users\hp\.m2\repository\com\google\guava\guava\33.3.1-jre\guava-33.3.1-jre.jar;C:\Users\hp\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\hp\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\hp\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\hp\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\hp\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\hp\.m2\repository\org\jsoup\jsoup\1.15.4\jsoup-1.15.4.jar;C:\Users\hp\.m2\repository\com\thoughtworks\xstream\xstream\1.4.21\xstream-1.4.21.jar;C:\Users\hp\.m2\repository\io\github\x-stream\mxparser\1.2.2\mxparser-1.2.2.jar;C:\Users\hp\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\hp\.m2\repository\com\opencsv\opencsv\5.9\opencsv-5.9.jar;C:\Users\hp\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\hp\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\hp\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\hp\.m2\repository\com\typesafe\config\1.4.3\config-1.4.3.jar;C:\Users\hp\.m2\repository\org\imgscalr\imgscalr-lib\4.2\imgscalr-lib-4.2.jar;C:\Users\hp\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\hp\.m2\repository\org\freemarker\freemarker\2.3.33\freemarker-2.3.33.jar;C:\Users\hp\.m2\repository\io\github\classgraph\classgraph\4.8.157\classgraph-4.8.157.jar;C:\Users\hp\.m2\repository\com\github\ben-manes\caffeine\caffeine\2.9.2\caffeine-2.9.2.jar;C:\Users\hp\.m2\repository\org\ehcache\ehcache\3.10.8\ehcache-3.10.8.jar;C:\Users\hp\.m2\repository\javax\cache\cache-api\1.1.0\cache-api-1.1.0.jar;C:\Users\hp\.m2\repository\net\sourceforge\jexcelapi\jxl\2.6.12\jxl-2.6.12.jar;C:\Users\hp\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.2\byte-buddy-agent-1.15.2.jar;C:\Users\hp\.m2\repository\org\objenesis\objenesis\3.4\objenesis-3.4.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-all\0.64.8\flexmark-all-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark\0.64.8\flexmark-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-abbreviation\0.64.8\flexmark-ext-abbreviation-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-admonition\0.64.8\flexmark-ext-admonition-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-anchorlink\0.64.8\flexmark-ext-anchorlink-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-aside\0.64.8\flexmark-ext-aside-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-attributes\0.64.8\flexmark-ext-attributes-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-autolink\0.64.8\flexmark-ext-autolink-0.64.8.jar;C:\Users\hp\.m2\repository\org\nibor\autolink\autolink\0.6.0\autolink-0.6.0.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-definition\0.64.8\flexmark-ext-definition-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-emoji\0.64.8\flexmark-ext-emoji-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-enumerated-reference\0.64.8\flexmark-ext-enumerated-reference-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-escaped-character\0.64.8\flexmark-ext-escaped-character-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-footnotes\0.64.8\flexmark-ext-footnotes-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-issues\0.64.8\flexmark-ext-gfm-issues-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-strikethrough\0.64.8\flexmark-ext-gfm-strikethrough-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-tasklist\0.64.8\flexmark-ext-gfm-tasklist-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-gfm-users\0.64.8\flexmark-ext-gfm-users-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-gitlab\0.64.8\flexmark-ext-gitlab-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-front-matter\0.64.8\flexmark-ext-jekyll-front-matter-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-jekyll-tag\0.64.8\flexmark-ext-jekyll-tag-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-media-tags\0.64.8\flexmark-ext-media-tags-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-macros\0.64.8\flexmark-ext-macros-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-ins\0.64.8\flexmark-ext-ins-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-xwiki-macros\0.64.8\flexmark-ext-xwiki-macros-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-superscript\0.64.8\flexmark-ext-superscript-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-toc\0.64.8\flexmark-ext-toc-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-typographic\0.64.8\flexmark-ext-typographic-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-wikilink\0.64.8\flexmark-ext-wikilink-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-yaml-front-matter\0.64.8\flexmark-ext-yaml-front-matter-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-youtube-embedded\0.64.8\flexmark-ext-youtube-embedded-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-html2md-converter\0.64.8\flexmark-html2md-converter-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-jira-converter\0.64.8\flexmark-jira-converter-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-pdf-converter\0.64.8\flexmark-pdf-converter-0.64.8.jar;C:\Users\hp\.m2\repository\com\openhtmltopdf\openhtmltopdf-core\1.0.10\openhtmltopdf-core-1.0.10.jar;C:\Users\hp\.m2\repository\com\openhtmltopdf\openhtmltopdf-pdfbox\1.0.10\openhtmltopdf-pdfbox-1.0.10.jar;C:\Users\hp\.m2\repository\org\apache\pdfbox\pdfbox\2.0.24\pdfbox-2.0.24.jar;C:\Users\hp\.m2\repository\org\apache\pdfbox\fontbox\2.0.24\fontbox-2.0.24.jar;C:\Users\hp\.m2\repository\org\apache\pdfbox\xmpbox\2.0.24\xmpbox-2.0.24.jar;C:\Users\hp\.m2\repository\de\rototor\pdfbox\graphics2d\0.32\graphics2d-0.32.jar;C:\Users\hp\.m2\repository\com\openhtmltopdf\openhtmltopdf-rtl-support\1.0.10\openhtmltopdf-rtl-support-1.0.10.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-profile-pegdown\0.64.8\flexmark-profile-pegdown-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-ast\0.64.8\flexmark-util-ast-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-builder\0.64.8\flexmark-util-builder-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-collection\0.64.8\flexmark-util-collection-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-data\0.64.8\flexmark-util-data-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-dependency\0.64.8\flexmark-util-dependency-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-format\0.64.8\flexmark-util-format-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-html\0.64.8\flexmark-util-html-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-misc\0.64.8\flexmark-util-misc-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-options\0.64.8\flexmark-util-options-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-sequence\0.64.8\flexmark-util-sequence-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util-visitor\0.64.8\flexmark-util-visitor-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-youtrack-converter\0.64.8\flexmark-youtrack-converter-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-resizable-image\0.64.8\flexmark-ext-resizable-image-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-ext-tables\0.64.8\flexmark-ext-tables-0.64.8.jar;C:\Users\hp\.m2\repository\com\vladsch\flexmark\flexmark-util\0.64.8\flexmark-util-0.64.8.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-reports\4.2.8\serenity-reports-4.2.8.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-stats\4.2.8\serenity-stats-4.2.8.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-reports-configuration\4.2.8\serenity-reports-configuration-4.2.8.jar;C:\Users\hp\.m2\repository\com\ibm\icu\icu4j\72.1\icu4j-72.1.jar;C:\Users\hp\.m2\repository\es\nitaur\markdown\txtmark\0.16\txtmark-0.16.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-report-resources\4.2.8\serenity-report-resources-4.2.8.jar;C:\Users\hp\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\hp\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\hp\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.1\jackson-core-2.18.1.jar;C:\Users\hp\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.1\jackson-databind-2.18.1.jar;C:\Users\hp\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.1\jackson-annotations-2.18.1.jar;C:\Users\hp\.m2\repository\commons-codec\commons-codec\1.17.1\commons-codec-1.17.1.jar;C:\Users\hp\.m2\repository\commons-io\commons-io\2.17.0\commons-io-2.17.0.jar;C:\Users\hp\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\hp\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\hp\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-java\4.26.0\selenium-java-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v128\4.26.0\selenium-devtools-v128-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v129\4.26.0\selenium-devtools-v129-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v130\4.26.0\selenium-devtools-v130-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.26.0\selenium-devtools-v85-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.26.0\selenium-remote-driver-4.26.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-api\1.43.0\opentelemetry-api-1.43.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-context\1.43.0\opentelemetry-context-1.43.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.43.0\opentelemetry-exporter-logging-1.43.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.43.0\opentelemetry-sdk-common-1.43.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.43.0\opentelemetry-sdk-extension-autoconfigure-spi-1.43.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.43.0\opentelemetry-sdk-extension-autoconfigure-1.43.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.43.0-alpha\opentelemetry-api-incubator-1.43.0-alpha.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.43.0\opentelemetry-sdk-trace-1.43.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.43.0\opentelemetry-sdk-1.43.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.43.0\opentelemetry-sdk-metrics-1.43.0.jar;C:\Users\hp\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.43.0\opentelemetry-sdk-logs-1.43.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-os\4.26.0\selenium-os-4.26.0.jar;C:\Users\hp\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.26.0\selenium-safari-driver-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-api\4.26.0\selenium-api-4.26.0.jar;C:\Users\hp\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-support\4.26.0\selenium-support-4.26.0.jar;C:\Users\hp\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-json\4.26.0\selenium-json-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.26.0\selenium-chrome-driver-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.26.0\selenium-chromium-driver-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.26.0\selenium-manager-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.26.0\selenium-firefox-driver-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-http\4.26.0\selenium-http-4.26.0.jar;C:\Users\hp\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.26.0\selenium-edge-driver-4.26.0.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.26.0\selenium-ie-driver-4.26.0.jar;C:\Users\hp\.m2\repository\org\htmlunit\htmlunit\4.5.0\htmlunit-4.5.0.jar;C:\Users\hp\.m2\repository\org\apache\httpcomponents\httpmime\4.5.14\httpmime-4.5.14.jar;C:\Users\hp\.m2\repository\org\htmlunit\htmlunit-core-js\4.5.0\htmlunit-core-js-4.5.0.jar;C:\Users\hp\.m2\repository\org\htmlunit\neko-htmlunit\4.5.0\neko-htmlunit-4.5.0.jar;C:\Users\hp\.m2\repository\org\htmlunit\htmlunit-cssparser\4.5.0\htmlunit-cssparser-4.5.0.jar;C:\Users\hp\.m2\repository\org\htmlunit\htmlunit-xpath\4.5.0\htmlunit-xpath-4.5.0.jar;C:\Users\hp\.m2\repository\org\htmlunit\htmlunit-csp\4.5.0\htmlunit-csp-4.5.0.jar;C:\Users\hp\.m2\repository\org\htmlunit\htmlunit-websocket-client\4.5.0\htmlunit-websocket-client-4.5.0.jar;C:\Users\hp\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\hp\.m2\repository\org\seleniumhq\selenium\htmlunit3-driver\4.25.0\htmlunit3-driver-4.25.0.jar;C:\Users\hp\.m2\repository\io\appium\java-client\9.3.0\java-client-9.3.0.jar;C:\Users\hp\.m2\repository\org\apache\groovy\groovy\4.0.23\groovy-4.0.23.jar;C:\Users\hp\.m2\repository\net\sf\opencsv\opencsv\2.3\opencsv-2.3.jar;C:\Users\hp\.m2\repository\org\apache\commons\commons-lang3\3.17.0\commons-lang3-3.17.0.jar;C:\Users\hp\.m2\repository\org\apache\commons\commons-compress\1.27.1\commons-compress-1.27.1.jar;C:\Users\hp\.m2\repository\org\fluentlenium\fluentlenium-core\0.10.2\fluentlenium-core-0.10.2.jar;C:\Users\hp\.m2\repository\com\jhlabs\filters\2.0.235\filters-2.0.235.jar;C:\Users\hp\.m2\repository\com\paulhammant\ngwebdriver\1.2\ngwebdriver-1.2.jar;C:\Users\hp\.m2\repository\joda-time\joda-time\2.13.0\joda-time-2.13.0.jar;C:\Users\hp\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\hp\.m2\repository\com\google\jimfs\jimfs\1.3.0\jimfs-1.3.0.jar;C:\Users\hp\.m2\repository\org\mockito\mockito-core\3.3.3\mockito-core-3.3.3.jar;C:\Users\hp\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\hp\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\hp\.m2\repository\com\sun\xml\bind\jaxb-core\2.3.0.1\jaxb-core-2.3.0.1.jar;C:\Users\hp\.m2\repository\com\sun\xml\bind\jaxb-impl\2.3.3\jaxb-impl-2.3.3.jar;C:\Users\hp\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.3\jakarta.xml.bind-api-2.3.3.jar;C:\Users\hp\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\hp\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-cucumber\4.2.8\serenity-cucumber-4.2.8.jar;C:\Users\hp\.m2\repository\io\cucumber\cucumber-core\7.20.1\cucumber-core-7.20.1.jar;C:\Users\hp\.m2\repository\io\cucumber\cucumber-gherkin\7.20.1\cucumber-gherkin-7.20.1.jar;C:\Users\hp\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.20.1\cucumber-gherkin-messages-7.20.1.jar;C:\Users\hp\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\hp\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\hp\.m2\repository\io\cucumber\testng-xml-formatter\0.2.0\testng-xml-formatter-0.2.0.jar;C:\Users\hp\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\hp\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\hp\.m2\repository\io\cucumber\datatable\7.20.1\datatable-7.20.1.jar;C:\Users\hp\.m2\repository\io\cucumber\cucumber-plugin\7.20.1\cucumber-plugin-7.20.1.jar;C:\Users\hp\.m2\repository\io\cucumber\docstring\7.20.1\docstring-7.20.1.jar;C:\Users\hp\.m2\repository\io\cucumber\html-formatter\21.7.0\html-formatter-21.7.0.jar;C:\Users\hp\.m2\repository\io\cucumber\junit-xml-formatter\0.5.0\junit-xml-formatter-0.5.0.jar;C:\Users\hp\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\hp\.m2\repository\io\cucumber\cucumber-java\7.20.1\cucumber-java-7.20.1.jar;C:\Users\hp\.m2\repository\io\cucumber\cucumber-junit\7.20.1\cucumber-junit-7.20.1.jar;C:\Users\hp\.m2\repository\org\apache\commons\commons-csv\1.12.0\commons-csv-1.12.0.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-screenplay\4.2.8\serenity-screenplay-4.2.8.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-screenplay-webdriver\4.2.8\serenity-screenplay-webdriver-4.2.8.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-ensure\4.2.8\serenity-ensure-4.2.8.jar;C:\Users\hp\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\2.0.21\kotlin-stdlib-2.0.21.jar;C:\Users\hp\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-junit5\4.2.8\serenity-junit5-4.2.8.jar;C:\Users\hp\.m2\repository\io\cucumber\tag-expressions\6.1.1\tag-expressions-6.1.1.jar;C:\Users\hp\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.1\junit-jupiter-params-5.11.1.jar;C:\Users\hp\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\hp\.m2\repository\org\junit\platform\junit-platform-launcher\1.11.3\junit-platform-launcher-1.11.3.jar;C:\Users\hp\.m2\repository\org\junit\platform\junit-platform-engine\1.11.3\junit-platform-engine-1.11.3.jar;C:\Users\hp\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\hp\.m2\repository\io\cucumber\cucumber-junit-platform-engine\7.20.1\cucumber-junit-platform-engine-7.20.1.jar;C:\Users\hp\.m2\repository\org\junit\platform\junit-platform-suite\1.11.3\junit-platform-suite-1.11.3.jar;C:\Users\hp\.m2\repository\org\junit\platform\junit-platform-suite-api\1.11.3\junit-platform-suite-api-1.11.3.jar;C:\Users\hp\.m2\repository\org\junit\platform\junit-platform-suite-engine\1.11.3\junit-platform-suite-engine-1.11.3.jar;C:\Users\hp\.m2\repository\org\junit\platform\junit-platform-suite-commons\1.11.3\junit-platform-suite-commons-1.11.3.jar;C:\Users\hp\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.11.3\junit-jupiter-engine-5.11.3.jar;C:\Users\hp\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.3\junit-jupiter-api-5.11.3.jar;C:\Users\hp\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\hp\.m2\repository\org\junit\platform\junit-platform-commons\1.11.3\junit-platform-commons-1.11.3.jar;C:\Users\hp\.m2\repository\org\junit\vintage\junit-vintage-engine\5.11.3\junit-vintage-engine-5.11.3.jar;C:\Users\hp\.m2\repository\net\serenity-bdd\serenity-rest-assured\4.2.8\serenity-rest-assured-4.2.8.jar;C:\Users\hp\.m2\repository\io\rest-assured\rest-assured\5.5.0\rest-assured-5.5.0.jar;C:\Users\hp\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\hp\.m2\repository\io\rest-assured\json-path\5.5.0\json-path-5.5.0.jar;C:\Users\hp\.m2\repository\io\rest-assured\rest-assured-common\5.5.0\rest-assured-common-5.5.0.jar;C:\Users\hp\.m2\repository\io\rest-assured\xml-path\5.5.0\xml-path-5.5.0.jar;C:\Users\hp\.m2\repository\org\apache\groovy\groovy-json\4.0.23\groovy-json-4.0.23.jar;C:\Users\hp\.m2\repository\org\apache\groovy\groovy-xml\4.0.23\groovy-xml-4.0.23.jar;C:\Users\hp\.m2\repository\ch\qos\logback\logback-classic\1.5.15\logback-classic-1.5.15.jar;C:\Users\hp\.m2\repository\ch\qos\logback\logback-core\1.5.15\logback-core-1.5.15.jar;C:\Users\hp\.m2\repository\org\slf4j\slf4j-api\2.0.15\slf4j-api-2.0.15.jar;C:\Users\hp\.m2\repository\org\assertj\assertj-core\3.27.0\assertj-core-3.27.0.jar;C:\Users\hp\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\hp"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\hp\AppData\Local\Temp\surefire16951413332554127790\surefirebooter-20250102104008117_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="java.protocol.handler.pkgs" value="com.google.common"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.5+11-LTS"/>
+    <property name="user.name" value="hp"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.5+11"/>
+    <property name="localRepository" value="C:\Users\hp\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\hp\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.5"/>
+    <property name="user.dir" value="D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot\bin;C:\Python312\Scripts\;C:\Python312\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\xampp\mysql\bin;C:\Users\hp\AppData\Local\Microsoft\WindowsApps\;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Tools\MSVC\14.29.30133\bin\Hostx64\x64;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86);C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-22\bin;C:\Users\hp\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\apache-maven-3.9.9\bin;C:\Users\hp\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\hp\AppData\Local\Programs\Python\Python312\;C:\Users\hp\AppData\Local\Microsoft\WindowsApps;C:\Users\hp\AppData\Local\JetBrains\Toolbox\scripts;C:\Users\hp\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\hp\AppData\Roaming\Composer\vendor\bin;C:\Users\hp\AppData\Roaming\nvm;C:\Program Files\nodejs;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.5+11-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="Filter by Price Range" classname="Product Filtering" time="14.791">
+    <error message="stale element reference: stale element not found&#10;  (Session info: chrome=131.0.6778.205)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception&#10;Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [056c1b034c7f6db4fb8a09a403cb7553, sendKeysToElement {id=f.B88769E34C4AA4D151236DE42638AC94.d.2F9793F93B43C28749F9BF98CEFDA114.e.48, value=[Ljava.lang.CharSequence;@2c815fdc}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59869}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59869/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (056c1b034c7f6db4fb8a09a403cb7553)] -&gt; xpath: //input[@id=&apos;amount-max&apos;]]&#10;Session ID: 056c1b034c7f6db4fb8a09a403cb7553" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [056c1b034c7f6db4fb8a09a403cb7553, sendKeysToElement {id=f.B88769E34C4AA4D151236DE42638AC94.d.2F9793F93B43C28749F9BF98CEFDA114.e.48, value=[Ljava.lang.CharSequence;@2c815fdc}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59869}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59869/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (056c1b034c7f6db4fb8a09a403cb7553)] -> xpath: //input[@id='amount-max']]
+Session ID: 056c1b034c7f6db4fb8a09a403cb7553
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.lambda$type$2(WebElementFacadeImpl.java:746)
+	at net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:22)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:744)
+	at pages.FilterPage.enterMaxPrice(FilterPage.java:44)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.enterMaxPrice$accessor$cqNuMrcC(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:425)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.enterMaxPrice(Unknown Source)
+	at steps.FilterSteps.userFiltersWithPriceRange(FilterSteps.java:27)
+	at ✽.User filters with price range "2000" to "10000"(file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature:5)
+]]></error>
+    <system-out><![CDATA[10:40:10.829 [main] DEBUG io.cucumber.core.plugin.SerenityReporter -- Running feature from file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature
+10:40:10.895 [main] INFO  -- 
+
+-------------------------------------------------------------------------------------
+     _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
+    /       ||   ____||   _  \     |   ____||  \ |  | |  | |           |\   \  /   / 
+   |   (----`|  |__   |  |_)  |    |  |__   |   \|  | |  | `---|  |----` \   \/   /  
+    \   \    |   __|  |      /     |   __|  |  . `  | |  |     |  |       \_    _/   
+.----)   |   |  |____ |  |\  \----.|  |____ |  |\   | |  |     |  |         |  |     
+|_______/    |_______|| _| `._____||_______||__| \__| |__|     |__|         |__|    
+                                                                                     
+ News and tutorials at https://serenity-bdd.info                                     
+ Documentation at https://serenity-bdd.github.io                                     
+ Test Automation Training and Coaching: https://www.serenity-dojo.com                
+ Commercial Support: https://www.serenity-dojo.com/serenity-bdd-enterprise-support   
+ Join the Serenity Community on Gitter: https://gitter.im/serenity-bdd/serenity-core 
+-------------------------------------------------------------------------------------
+
+10:40:10.899 [main] DEBUG net.thucydides.core.steps.StepEventBus -- Test suite started for story net.thucydides.model.domain.Story@81196f00
+10:40:10.904 [main] INFO  -- Test Suite Started: Product Filtering
+10:40:11.034 [main] DEBUG io.cucumber.core.plugin.SerenityReporter -- Running feature from file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/search.feature
+10:40:11.039 [main] DEBUG net.thucydides.core.steps.StepEventBus -- Test suite started for story net.thucydides.model.domain.Story@3f4cb500
+10:40:11.040 [main] INFO  -- Test Suite Started: Search Functionality on UI-Testing
+10:40:11.043 [main] DEBUG io.cucumber.core.plugin.SerenityReporter -- Running feature from file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature
+10:40:11.045 [main] DEBUG net.thucydides.core.steps.StepEventBus -- Test suite started for story net.thucydides.model.domain.Story@81196f00
+10:40:11.045 [main] INFO  -- Test Suite Started: Product Filtering
+
+Scenario: Filter by Price Range                               &amp#27;[90m# src/test/resources/features/filter.feature:3&amp#27;[0m
+10:40:11.155 [main] DEBUG io.cucumber.core.plugin.SerenityReporter -- Running feature from file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature
+10:40:11.170 [main] INFO  -- 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Filter by Price Range(product-filtering;filter-by-price-range)
+--------------------------------------------------------------------------------
+10:40:11.721 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Starting Chrome driver instance with capabilities:
+10:40:11.723 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on the product page&amp#27;[0m                           &amp#27;[90m# steps.FilterSteps.userIsOnTheProductPage()&amp#27;[0m
+10:40:20.943 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Opening darkroom
+10:40:20.945 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Darkroom processing line starting up
+10:40:21.187 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\e610ac8756035992676ca627bbeb6b5897ea1e300f04966934aa7dd012943382.png
+10:40:21.188 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Processing screenshot image in /var/screenshots/screenshot-11069260168685505398
+10:40:21.188 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Saving screenshot to D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\e610ac8756035992676ca627bbeb6b5897ea1e300f04966934aa7dd012943382.png
+10:40:24.931 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\11687aef2b83c016681efd496a8d2f768111826ee2849bdfdbfd4452571d9ebe.png
+10:40:24.931 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Processing screenshot image in /var/screenshots/screenshot-3664034646965277161
+10:40:24.931 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Saving screenshot to D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\11687aef2b83c016681efd496a8d2f768111826ee2849bdfdbfd4452571d9ebe.png
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mUser filters with price range &amp#27;[0m&amp#27;[31m&amp#27;[1m"2000"&amp#27;[0m&amp#27;[31m to &amp#27;[0m&amp#27;[31m&amp#27;[1m"10000"&amp#27;[0m        &amp#27;[90m# steps.FilterSteps.userFiltersWithPriceRange(java.lang.String,java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [056c1b034c7f6db4fb8a09a403cb7553, sendKeysToElement {id=f.B88769E34C4AA4D151236DE42638AC94.d.2F9793F93B43C28749F9BF98CEFDA114.e.48, value=[Ljava.lang.CharSequence;@2c815fdc}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59869}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59869/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (056c1b034c7f6db4fb8a09a403cb7553)] -> xpath: //input[@id='amount-max']]
+Session ID: 056c1b034c7f6db4fb8a09a403cb7553
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.lambda$type$2(WebElementFacadeImpl.java:746)
+	at net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:22)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:744)
+	at pages.FilterPage.enterMaxPrice(FilterPage.java:44)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.enterMaxPrice$accessor$cqNuMrcC(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:425)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.enterMaxPrice(Unknown Source)
+	at steps.FilterSteps.userFiltersWithPriceRange(FilterSteps.java:27)
+	at ✽.User filters with price range "2000" to "10000"(file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature:5)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mProducts should be filtered to within that price range&amp#27;[0m &amp#27;[90m# steps.FilterSteps.productsShouldBeFilteredToWithinThatPriceRange()&amp#27;[0m
+10:40:25.390 [main] ERROR  -- 
+  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
+ |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
+   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
+   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+
+Filter by Price Range
+---------------------------------------------------------------
+10:40:25.398 [main] DEBUG  -- RELATED ISSUES: 
+10:40:25.401 [main] ERROR  --     Test failed at step: Enter max price: 10000
+10:40:25.402 [main] ERROR  --     stale element reference: stale element not found
+]]></system-out>
+    <system-err><![CDATA[SLF4J(I): Connected with provider of type [ch.qos.logback.classic.spi.LogbackServiceProvider]
+WARNING: A Java agent has been loaded dynamically (C:\Users\hp\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.2\byte-buddy-agent-1.15.2.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+Jan 02, 2025 10:40:13 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 131, returning the closest version; found: 130; Please update to a Selenium version that supports CDP version 131
+]]></system-err>
+  </testcase>
+  <testcase name="Filter by Category" classname="Product Filtering" time="20.168">
+    <error message="Cannot invoke &quot;java.util.List.iterator()&quot; because &quot;this.productCards&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "this.productCards" is null
+	at pages.FilterPage.isProductInCategory(FilterPage.java:82)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.isProductInCategory$accessor$cqNuMrcC(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:425)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.isProductInCategory(Unknown Source)
+	at steps.FilterSteps.productsShouldBeFilteredByCategory(FilterSteps.java:42)
+	at ✽.Products should be filtered by category "Computers"(file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature:11)
+]]></error>
+    <system-out><![CDATA[
+Scenario: Filter by Category                               &amp#27;[90m# src/test/resources/features/filter.feature:8&amp#27;[0m
+10:40:25.865 [main] DEBUG io.cucumber.core.plugin.SerenityReporter -- Running feature from file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature
+10:40:25.867 [main] INFO  -- 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Filter by Category(product-filtering;filter-by-category)
+--------------------------------------------------------------------------------
+10:40:25.938 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Starting Chrome driver instance with capabilities:
+10:40:25.939 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on the product page&amp#27;[0m                        &amp#27;[90m# steps.FilterSteps.userIsOnTheProductPage()&amp#27;[0m
+10:40:41.758 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\e610ac8756035992676ca627bbeb6b5897ea1e300f04966934aa7dd012943382.png
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser filters by category &amp#27;[0m&amp#27;[32m&amp#27;[1m"Computers"&amp#27;[0m                &amp#27;[90m# steps.FilterSteps.userFiltersByCategory(java.lang.String)&amp#27;[0m
+10:40:45.645 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\d3676070783fd47f8a22c3d7a65761bab26325e5ded974d359eff83462b3f320.png
+10:40:45.645 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Processing screenshot image in /var/screenshots/screenshot-17181338955413472157
+10:40:45.645 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Saving screenshot to D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\d3676070783fd47f8a22c3d7a65761bab26325e5ded974d359eff83462b3f320.png
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mProducts should be filtered by category &amp#27;[0m&amp#27;[31m&amp#27;[1m"Computers"&amp#27;[0m &amp#27;[90m# steps.FilterSteps.productsShouldBeFilteredByCategory(java.lang.String)&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "this.productCards" is null
+	at pages.FilterPage.isProductInCategory(FilterPage.java:82)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.isProductInCategory$accessor$cqNuMrcC(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:425)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.isProductInCategory(Unknown Source)
+	at steps.FilterSteps.productsShouldBeFilteredByCategory(FilterSteps.java:42)
+	at ✽.Products should be filtered by category "Computers"(file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature:11)
+&amp#27;[0m
+10:40:45.799 [main] ERROR  -- 
+  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
+ |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
+   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
+   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+
+Filter by Category
+---------------------------------------------------------------
+10:40:45.799 [main] DEBUG  -- RELATED ISSUES: 
+10:40:45.799 [main] ERROR  --     Test failed at step: Is product in category: Computers
+10:40:45.800 [main] ERROR  --     Cannot invoke "java.util.List.iterator()" because "this.productCards" is null
+]]></system-out>
+    <system-err><![CDATA[Jan 02, 2025 10:40:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 131, returning the closest version; found: 130; Please update to a Selenium version that supports CDP version 131
+]]></system-err>
+  </testcase>
+  <testcase name="Filter by Availability" classname="Product Filtering" time="18.306">
+    <error message="Cannot invoke &quot;java.util.List.iterator()&quot; because &quot;this.productCards&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "this.productCards" is null
+	at pages.FilterPage.isOutOfStockProductListed(FilterPage.java:93)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.isOutOfStockProductListed$accessor$cqNuMrcC(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:425)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.isOutOfStockProductListed(Unknown Source)
+	at steps.FilterSteps.outOfStockProductShouldNotBeListed(FilterSteps.java:52)
+	at ✽.Out of stock product should not be listed(file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature:16)
+]]></error>
+    <system-out><![CDATA[
+Scenario: Filter by Availability                 &amp#27;[90m# src/test/resources/features/filter.feature:13&amp#27;[0m
+10:40:46.023 [main] DEBUG io.cucumber.core.plugin.SerenityReporter -- Running feature from file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature
+10:40:46.024 [main] INFO  -- 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Filter by Availability(product-filtering;filter-by-availability)
+--------------------------------------------------------------------------------
+10:40:46.077 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Starting Chrome driver instance with capabilities:
+10:40:46.078 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on the product page&amp#27;[0m              &amp#27;[90m# steps.FilterSteps.userIsOnTheProductPage()&amp#27;[0m
+10:40:54.243 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\c74974ea49e2d655621c4f8e0f1509702dee1b343ed20cdb3472cbc9d8eacacf.png
+10:40:54.243 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Processing screenshot image in /var/screenshots/screenshot-1435029012728433906
+10:40:54.243 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Saving screenshot to D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\c74974ea49e2d655621c4f8e0f1509702dee1b343ed20cdb3472cbc9d8eacacf.png
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser filters by &amp#27;[0m&amp#27;[32m&amp#27;[1m"Exclude Stock Out"&amp#27;[0m       &amp#27;[90m# steps.FilterSteps.userFiltersByAvailability(java.lang.String)&amp#27;[0m
+10:41:03.912 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\d4b40f694a3428393eed5dff9424687b2303b677bf753ec1ec2b36109ef73841.png
+10:41:03.912 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Processing screenshot image in /var/screenshots/screenshot-18126622554225881160
+10:41:03.912 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Saving screenshot to D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\d4b40f694a3428393eed5dff9424687b2303b677bf753ec1ec2b36109ef73841.png
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mOut of stock product should not be listed&amp#27;[0m &amp#27;[90m# steps.FilterSteps.outOfStockProductShouldNotBeListed()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "this.productCards" is null
+	at pages.FilterPage.isOutOfStockProductListed(FilterPage.java:93)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.isOutOfStockProductListed$accessor$cqNuMrcC(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:425)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.isOutOfStockProductListed(Unknown Source)
+	at steps.FilterSteps.outOfStockProductShouldNotBeListed(FilterSteps.java:52)
+	at ✽.Out of stock product should not be listed(file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature:16)
+&amp#27;[0m
+10:41:04.062 [main] ERROR  -- 
+  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
+ |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
+   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
+   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+
+Filter by Availability
+---------------------------------------------------------------
+10:41:04.062 [main] DEBUG  -- RELATED ISSUES: 
+10:41:04.062 [main] ERROR  --     Test failed at step: Is out of stock product listed
+10:41:04.063 [main] ERROR  --     Cannot invoke "java.util.List.iterator()" because "this.productCards" is null
+]]></system-out>
+    <system-err><![CDATA[Jan 02, 2025 10:40:46 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 131, returning the closest version; found: 130; Please update to a Selenium version that supports CDP version 131
+]]></system-err>
+  </testcase>
+  <testcase name="Filter by Offers" classname="Product Filtering" time="18.251">
+    <error message="Cannot invoke &quot;java.util.List.iterator()&quot; because &quot;this.productCards&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "this.productCards" is null
+	at pages.FilterPage.isProductInOfferCategory(FilterPage.java:103)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.isProductInOfferCategory$accessor$cqNuMrcC(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:425)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.isProductInOfferCategory(Unknown Source)
+	at steps.FilterSteps.productsThatAreNotInTheOfferCategoryShouldNotBeListed(FilterSteps.java:62)
+	at ✽.Products that are not in the offer category should not be listed(file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature:21)
+]]></error>
+    <system-out><![CDATA[
+Scenario: Filter by Offers                                              &amp#27;[90m# src/test/resources/features/filter.feature:18&amp#27;[0m
+10:41:04.333 [main] DEBUG io.cucumber.core.plugin.SerenityReporter -- Running feature from file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature
+10:41:04.333 [main] INFO  -- 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Filter by Offers(product-filtering;filter-by-offers)
+--------------------------------------------------------------------------------
+10:41:04.378 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Starting Chrome driver instance with capabilities:
+10:41:04.384 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on the product page&amp#27;[0m                                     &amp#27;[90m# steps.FilterSteps.userIsOnTheProductPage()&amp#27;[0m
+10:41:16.495 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\23c164b66c051b21027998dbeb5577956947c46b7191290cc569b82c171cbec6.png
+10:41:16.495 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Processing screenshot image in /var/screenshots/screenshot-5763461300074809646
+10:41:16.495 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Saving screenshot to D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\23c164b66c051b21027998dbeb5577956947c46b7191290cc569b82c171cbec6.png
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser filters by offer &amp#27;[0m&amp#27;[32m&amp#27;[1m"20% or More"&amp#27;[0m                              &amp#27;[90m# steps.FilterSteps.userFiltersByOffer(java.lang.String)&amp#27;[0m
+10:41:22.243 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\4d2e1e9663fdb6618350901e7e0caa9e33c08fa7e1276b16a581e918b6380749.png
+10:41:22.244 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Processing screenshot image in /var/screenshots/screenshot-7629181120763495346
+10:41:22.244 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Saving screenshot to D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\4d2e1e9663fdb6618350901e7e0caa9e33c08fa7e1276b16a581e918b6380749.png
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mProducts that are not in the offer category should not be listed&amp#27;[0m &amp#27;[90m# steps.FilterSteps.productsThatAreNotInTheOfferCategoryShouldNotBeListed()&amp#27;[0m
+      &amp#27;[31mjava.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "this.productCards" is null
+	at pages.FilterPage.isProductInOfferCategory(FilterPage.java:103)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.isProductInOfferCategory$accessor$cqNuMrcC(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:425)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.isProductInOfferCategory(Unknown Source)
+	at steps.FilterSteps.productsThatAreNotInTheOfferCategoryShouldNotBeListed(FilterSteps.java:62)
+	at ✽.Products that are not in the offer category should not be listed(file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature:21)
+&amp#27;[0m
+10:41:22.335 [main] ERROR  -- 
+  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
+ |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
+   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
+   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+
+Filter by Offers
+---------------------------------------------------------------
+10:41:22.335 [main] DEBUG  -- RELATED ISSUES: 
+10:41:22.336 [main] ERROR  --     Test failed at step: Is product in offer category: 20% or More
+10:41:22.337 [main] ERROR  --     Cannot invoke "java.util.List.iterator()" because "this.productCards" is null
+]]></system-out>
+    <system-err><![CDATA[Jan 02, 2025 10:41:05 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 131, returning the closest version; found: 130; Please update to a Selenium version that supports CDP version 131
+]]></system-err>
+  </testcase>
+  <testcase name="Combine Multiple Filters" classname="Product Filtering" time="16.964">
+    <error message="stale element reference: stale element not found&#10;  (Session info: chrome=131.0.6778.205)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception&#10;Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;&#10;System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [1e1e41758adafb187918b84f9fd82869, sendKeysToElement {id=f.34334001F8D5AB89CF3605EA5D9C049E.d.E309631A2B73E22CE3AD1B7556D282BF.e.296, value=[Ljava.lang.CharSequence;@e171f93}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60162}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60162/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on windows (1e1e41758adafb187918b84f9fd82869)] -&gt; xpath: //input[@id=&apos;amount-max&apos;]]&#10;Session ID: 1e1e41758adafb187918b84f9fd82869" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1e1e41758adafb187918b84f9fd82869, sendKeysToElement {id=f.34334001F8D5AB89CF3605EA5D9C049E.d.E309631A2B73E22CE3AD1B7556D282BF.e.296, value=[Ljava.lang.CharSequence;@e171f93}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60162}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60162/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1e1e41758adafb187918b84f9fd82869)] -> xpath: //input[@id='amount-max']]
+Session ID: 1e1e41758adafb187918b84f9fd82869
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.lambda$type$2(WebElementFacadeImpl.java:746)
+	at net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:22)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:744)
+	at pages.FilterPage.enterMaxPrice(FilterPage.java:44)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.enterMaxPrice$accessor$cqNuMrcC(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:425)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.enterMaxPrice(Unknown Source)
+	at steps.FilterSteps.userAppliesMultipleFilters(FilterSteps.java:69)
+	at ✽.User applies category "Computers", price range "2000" to "5000", and offer "10% or More"(file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature:25)
+]]></error>
+    <system-out><![CDATA[
+Scenario: Combine Multiple Filters                                                              &amp#27;[90m# src/test/resources/features/filter.feature:23&amp#27;[0m
+10:41:22.581 [main] DEBUG io.cucumber.core.plugin.SerenityReporter -- Running feature from file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature
+10:41:22.581 [main] INFO  -- 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Combine Multiple Filters(product-filtering;combine-multiple-filters)
+--------------------------------------------------------------------------------
+10:41:22.630 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Starting Chrome driver instance with capabilities:
+10:41:22.631 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on the product page&amp#27;[0m                                                             &amp#27;[90m# steps.FilterSteps.userIsOnTheProductPage()&amp#27;[0m
+10:41:31.288 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\505f6c4e37aef53cf140de068df9abfcc639514c5510a98147eb91c5e47e1a38.png
+10:41:31.289 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Processing screenshot image in /var/screenshots/screenshot-11273301870997739052
+10:41:31.289 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Saving screenshot to D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\505f6c4e37aef53cf140de068df9abfcc639514c5510a98147eb91c5e47e1a38.png
+10:41:37.495 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\f4922b21b38637ead55ee6de1509919f967129f1fc377922669e6b197d7c866c.png
+10:41:37.495 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Processing screenshot image in /var/screenshots/screenshot-13244059923300253473
+10:41:37.495 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Saving screenshot to D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\f4922b21b38637ead55ee6de1509919f967129f1fc377922669e6b197d7c866c.png
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mUser applies category &amp#27;[0m&amp#27;[31m&amp#27;[1m"Computers"&amp#27;[0m&amp#27;[31m, price range &amp#27;[0m&amp#27;[31m&amp#27;[1m"2000"&amp#27;[0m&amp#27;[31m to &amp#27;[0m&amp#27;[31m&amp#27;[1m"5000"&amp#27;[0m&amp#27;[31m, and offer &amp#27;[0m&amp#27;[31m&amp#27;[1m"10% or More"&amp#27;[0m &amp#27;[90m# steps.FilterSteps.userAppliesMultipleFilters(java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [1e1e41758adafb187918b84f9fd82869, sendKeysToElement {id=f.34334001F8D5AB89CF3605EA5D9C049E.d.E309631A2B73E22CE3AD1B7556D282BF.e.296, value=[Ljava.lang.CharSequence;@e171f93}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60162}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60162/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (1e1e41758adafb187918b84f9fd82869)] -> xpath: //input[@id='amount-max']]
+Session ID: 1e1e41758adafb187918b84f9fd82869
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.lambda$type$2(WebElementFacadeImpl.java:746)
+	at net.serenitybdd.core.pages.WithRetries.perform(WithRetries.java:22)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:744)
+	at pages.FilterPage.enterMaxPrice(FilterPage.java:44)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.enterMaxPrice$accessor$cqNuMrcC(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:425)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.enterMaxPrice(Unknown Source)
+	at steps.FilterSteps.userAppliesMultipleFilters(FilterSteps.java:69)
+	at ✽.User applies category "Computers", price range "2000" to "5000", and offer "10% or More"(file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature:25)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mProducts should be filtered by all specified criteria&amp#27;[0m                                    &amp#27;[90m# steps.FilterSteps.productsShouldBeFilteredByAllCriteria()&amp#27;[0m
+10:41:37.630 [main] ERROR  -- 
+  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
+ |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
+   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
+   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+
+Combine Multiple Filters
+---------------------------------------------------------------
+10:41:37.631 [main] DEBUG  -- RELATED ISSUES: 
+10:41:37.631 [main] ERROR  --     Test failed at step: Enter max price: 5000
+10:41:37.631 [main] ERROR  --     stale element reference: stale element not found
+]]></system-out>
+    <system-err><![CDATA[Jan 02, 2025 10:41:23 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 131, returning the closest version; found: 130; Please update to a Selenium version that supports CDP version 131
+]]></system-err>
+  </testcase>
+  <testcase name="Filter by Sorting option" classname="Product Filtering" time="33.486">
+    <error message="Expected condition failed: waiting for presence of element located by: By.xpath: //select[@class=&apos;form-select&apos;] (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //select[@class='form-select'] (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.FilterPage.waitForElement(FilterPage.java:35)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.waitForElement$accessor$cqNuMrcC(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:425)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.waitForElement(Unknown Source)
+	at pages.FilterPage.selectSortOption(FilterPage.java:61)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.selectSortOption$accessor$cqNuMrcC(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:425)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.selectSortOption(Unknown Source)
+	at steps.FilterSteps.userSortsBy(FilterSteps.java:81)
+	at ✽.User sorts by "Price - Low to High"(file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature:30)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@class='form-select']"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [21d2c568857812d55860ba5642643029, findElement {value=//select[@class='form-select'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60238}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60238/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 21d2c568857812d55860ba5642643029
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:271)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pages.FilterPage.waitForElement(FilterPage.java:35)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.waitForElement$accessor$cqNuMrcC(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:425)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.waitForElement(Unknown Source)
+	at pages.FilterPage.selectSortOption(FilterPage.java:61)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.selectSortOption$accessor$cqNuMrcC(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:425)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.selectSortOption(Unknown Source)
+	at steps.FilterSteps.userSortsBy(FilterSteps.java:81)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:330)
+	at io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:51)
+	at io.cucumber.junit.CucumberSerenityBaseRunner$RunCucumber.evaluate(CucumberSerenityBaseRunner.java:361)
+]]></error>
+    <system-out><![CDATA[
+Scenario: Filter by Sorting option                               &amp#27;[90m# src/test/resources/features/filter.feature:28&amp#27;[0m
+10:41:39.547 [main] DEBUG io.cucumber.core.plugin.SerenityReporter -- Running feature from file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature
+10:41:39.547 [main] INFO  -- 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Filter by Sorting option(product-filtering;filter-by-sorting-option)
+--------------------------------------------------------------------------------
+10:41:39.596 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Starting Chrome driver instance with capabilities:
+10:41:39.596 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on the product page&amp#27;[0m                              &amp#27;[90m# steps.FilterSteps.userIsOnTheProductPage()&amp#27;[0m
+10:41:52.493 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\c128c7ea616ef4763a06b118c759d518d0c89e504e9e2f212457cffc5571abc3.png
+10:41:52.494 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Processing screenshot image in /var/screenshots/screenshot-7580641657942296774
+10:41:52.494 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Saving screenshot to D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\c128c7ea616ef4763a06b118c759d518d0c89e504e9e2f212457cffc5571abc3.png
+10:42:12.659 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\962b12f421988061311d2195eca758acccdc88123f2925cc373e5a845acc57ce.png
+10:42:12.659 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Processing screenshot image in /var/screenshots/screenshot-4170652240957017407
+10:42:12.659 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Saving screenshot to D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\962b12f421988061311d2195eca758acccdc88123f2925cc373e5a845acc57ce.png
+  &amp#27;[31mWhen &amp#27;[0m&amp#27;[31mUser sorts by &amp#27;[0m&amp#27;[31m&amp#27;[1m"Price - Low to High"&amp#27;[0m                       &amp#27;[90m# steps.FilterSteps.userSortsBy(java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //select[@class='form-select'] (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at pages.FilterPage.waitForElement(FilterPage.java:35)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.waitForElement$accessor$cqNuMrcC(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:425)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.waitForElement(Unknown Source)
+	at pages.FilterPage.selectSortOption(FilterPage.java:61)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.selectSortOption$accessor$cqNuMrcC(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:425)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.selectSortOption(Unknown Source)
+	at steps.FilterSteps.userSortsBy(FilterSteps.java:81)
+	at ✽.User sorts by "Price - Low to High"(file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature:30)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//select[@class='form-select']"}
+  (Session info: chrome=131.0.6778.205)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [21d2c568857812d55860ba5642643029, findElement {value=//select[@class='form-select'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.205, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\hp\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60238}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60238/devtoo..., se:cdpVersion: 131.0.6778.205, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 21d2c568857812d55860ba5642643029
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:271)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pages.FilterPage.waitForElement(FilterPage.java:35)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.waitForElement$accessor$cqNuMrcC(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:425)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.waitForElement(Unknown Source)
+	at pages.FilterPage.selectSortOption(FilterPage.java:61)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.selectSortOption$accessor$cqNuMrcC(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at net.thucydides.core.steps.BaseMethodRunner.invokeMethod(BaseMethodRunner.java:18)
+	at net.thucydides.core.steps.NormalMethodRunner.invokeMethodAndNotifyFailures(NormalMethodRunner.java:18)
+	at net.thucydides.core.steps.StepInterceptor.runNormalMethod(StepInterceptor.java:425)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:200)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:93)
+	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
+	at pages.FilterPage$ByteBuddy$reTOd0KI.selectSortOption(Unknown Source)
+	at steps.FilterSteps.userSortsBy(FilterSteps.java:81)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:62)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:330)
+	at io.cucumber.junit.CucumberSerenityBaseRunner.runChild(CucumberSerenityBaseRunner.java:51)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.CucumberSerenityBaseRunner$RunCucumber.evaluate(CucumberSerenityBaseRunner.java:361)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mproducts should be sorted in &amp#27;[0m&amp#27;[36m&amp#27;[1m"Price - Low to High"&amp#27;[0m&amp#27;[36m order.&amp#27;[0m &amp#27;[90m# steps.FilterSteps.productsShouldBeSortedIn(java.lang.String)&amp#27;[0m
+10:42:12.777 [main] ERROR  -- 
+  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
+ |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
+   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
+   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+
+Filter by Sorting option
+---------------------------------------------------------------
+10:42:12.778 [main] DEBUG  -- RELATED ISSUES: 
+10:42:12.778 [main] ERROR  --     Test failed at step: Select sort option: Price - Low to High
+10:42:12.778 [main] ERROR  --     Expected condition failed: waiting for presence of element located by: By.xpath: //select[@class='form-select'] (tried for 20 second(s) with 500 milliseconds interval)
+]]></system-out>
+    <system-err><![CDATA[Jan 02, 2025 10:41:40 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 131, returning the closest version; found: 130; Please update to a Selenium version that supports CDP version 131
+]]></system-err>
+  </testcase>
+  <testcase name="Clear all filters" classname="Product Filtering" time="34.717">
+    <error message="The step &apos;clicks the clear all filter button&apos; is undefined.&#10;You can implement this step using the snippet(s) below:&#10;&#10;@When(&quot;clicks the clear all filter button&quot;)&#10;public void clicks_the_clear_all_filter_button() {&#10;    // Write code here that turns the phrase above into concrete actions&#10;    throw new io.cucumber.java.PendingException();&#10;}&#10;" type="io.cucumber.junit.UndefinedStepException"><![CDATA[io.cucumber.junit.UndefinedStepException: 
+The step 'clicks the clear all filter button' is undefined.
+You can implement this step using the snippet(s) below:
+
+@When("clicks the clear all filter button")
+public void clicks_the_clear_all_filter_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+]]></error>
+    <system-out><![CDATA[
+Scenario: Clear all filters              &amp#27;[90m# src/test/resources/features/filter.feature:33&amp#27;[0m
+10:42:13.059 [main] DEBUG io.cucumber.core.plugin.SerenityReporter -- Running feature from file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/filter.feature
+10:42:13.059 [main] INFO  -- 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Clear all filters(product-filtering;clear-all-filters)
+--------------------------------------------------------------------------------
+10:42:13.106 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Starting Chrome driver instance with capabilities:
+10:42:13.107 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is on the product page&amp#27;[0m      &amp#27;[90m# steps.FilterSteps.userIsOnTheProductPage()&amp#27;[0m
+10:42:23.358 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\eb348f65f01c122b9144200c01dccd642665a1eecc36789864d373662ba6456e.png
+10:42:23.359 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Processing screenshot image in /var/screenshots/screenshot-12205788006304523154
+10:42:23.359 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Saving screenshot to D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\eb348f65f01c122b9144200c01dccd642665a1eecc36789864d373662ba6456e.png
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser filters with various options&amp#27;[0m &amp#27;[90m# steps.FilterSteps.userFiltersWithVariousOptions()&amp#27;[0m
+10:42:47.543 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\4d2e1e9663fdb6618350901e7e0caa9e33c08fa7e1276b16a581e918b6380749.png
+  &amp#27;[33mAnd &amp#27;[0m&amp#27;[33mclicks the clear all filter button&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36mall filters should be cleared&amp#27;[0m     &amp#27;[90m# steps.FilterSteps.allFiltersShouldBeCleared()&amp#27;[0m
+10:42:47.548 [main] INFO  -- 
+  _____   ___   ___   _____     ___   ___   _  _   ___    ___   _  _    ___ 
+ |_   _| | __| / __| |_   _|   | _ \ | __| | \| | |   \  |_ _| | \| |  / __|
+   | |   | _|  \__ \   | |     |  _/ | _|  | .` | | |) |  | |  | .` | | (_ |
+   |_|   |___| |___/   |_|     |_|   |___| |_|\_| |___/  |___| |_|\_|  \___|
+
+Clear all filters
+-----------------------------------------------------------------------------
+]]></system-out>
+    <system-err><![CDATA[Jan 02, 2025 10:42:13 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 131, returning the closest version; found: 130; Please update to a Selenium version that supports CDP version 131
+]]></system-err>
+  </testcase>
+  <testcase name="Searching for a single product" classname="Search Functionality on UI-Testing" time="27.592">
+    <system-out><![CDATA[10:42:47.751 [main] DEBUG io.cucumber.core.plugin.SerenityReporter -- Running feature from file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/search.feature
+10:42:47.752 [main] DEBUG net.thucydides.core.steps.StepEventBus -- Test suite started for story net.thucydides.model.domain.Story@3f4cb500
+10:42:47.754 [main] INFO  -- Test Suite Started: Search Functionality on UI-Testing
+
+Scenario: Searching for a single product               &amp#27;[90m# src/test/resources/features/search.feature:3&amp#27;[0m
+10:42:47.763 [main] DEBUG io.cucumber.core.plugin.SerenityReporter -- Running feature from file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/search.feature
+10:42:47.764 [main] INFO  -- 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Searching for a single product(search-functionality-on-ui-testing;searching-for-a-single-product)
+--------------------------------------------------------------------------------
+10:42:47.975 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Starting Chrome driver instance with capabilities:
+10:42:47.975 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI open the homepage&amp#27;[0m                            &amp#27;[90m# steps.SearchSteps.openHomePage()&amp#27;[0m
+10:43:10.022 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Opening darkroom
+10:43:10.023 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Darkroom processing line starting up
+10:43:10.271 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\512704c126e1c606cc65d80a653b63bb9fd181bc4116fe7996de8376216b41a1.png
+10:43:10.272 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Processing screenshot image in /var/screenshots/screenshot-4044718601561970906
+10:43:10.273 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Saving screenshot to D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\512704c126e1c606cc65d80a653b63bb9fd181bc4116fe7996de8376216b41a1.png
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI search for &amp#27;[0m&amp#27;[32m&amp#27;[1m"laptop"&amp#27;[0m                           &amp#27;[90m# steps.SearchSteps.searchFor(java.lang.String)&amp#27;[0m
+10:43:15.001 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\a7435afa2ebd2714a4cdf673e1f41710b3b599acfc0a1d9ca7e13e140a51de2b.png
+10:43:15.001 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Processing screenshot image in /var/screenshots/screenshot-8530690850376201331
+10:43:15.001 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Saving screenshot to D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\a7435afa2ebd2714a4cdf673e1f41710b3b599acfc0a1d9ca7e13e140a51de2b.png
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see search results related to &amp#27;[0m&amp#27;[32m&amp#27;[1m"laptop"&amp#27;[0m &amp#27;[90m# steps.SearchSteps.seeResults(java.lang.String)&amp#27;[0m
+10:43:15.201 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\a7435afa2ebd2714a4cdf673e1f41710b3b599acfc0a1d9ca7e13e140a51de2b.png
+10:43:15.202 [main] INFO  -- 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Searching for a single product
+----------------------------------------------------------------------
+]]></system-out>
+    <system-err><![CDATA[Jan 02, 2025 10:42:48 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 131, returning the closest version; found: 130; Please update to a Selenium version that supports CDP version 131
+]]></system-err>
+  </testcase>
+  <testcase name="Searching for a product with multiple keywords" classname="Search Functionality on UI-Testing" time="19.91">
+    <system-out><![CDATA[
+Scenario: Searching for a product with multiple keywords      &amp#27;[90m# src/test/resources/features/search.feature:8&amp#27;[0m
+10:43:15.356 [main] DEBUG io.cucumber.core.plugin.SerenityReporter -- Running feature from file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/search.feature
+10:43:15.357 [main] INFO  -- 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Searching for a product with multiple keywords(search-functionality-on-ui-testing;searching-for-a-product-with-multiple-keywords)
+--------------------------------------------------------------------------------
+10:43:15.416 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Starting Chrome driver instance with capabilities:
+10:43:15.416 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI open the homepage&amp#27;[0m                                   &amp#27;[90m# steps.SearchSteps.openHomePage()&amp#27;[0m
+10:43:27.530 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\512704c126e1c606cc65d80a653b63bb9fd181bc4116fe7996de8376216b41a1.png
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI search for &amp#27;[0m&amp#27;[32m&amp#27;[1m"gaming laptop"&amp#27;[0m                           &amp#27;[90m# steps.SearchSteps.searchFor(java.lang.String)&amp#27;[0m
+10:43:34.885 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\a64c679ef88c996e18d507cf489b8a9c74669ddb27d25b4d73df1f862ee13e13.png
+10:43:34.886 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Processing screenshot image in /var/screenshots/screenshot-17274301465412123681
+10:43:34.886 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Saving screenshot to D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\a64c679ef88c996e18d507cf489b8a9c74669ddb27d25b4d73df1f862ee13e13.png
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see search results related to &amp#27;[0m&amp#27;[32m&amp#27;[1m"gaming laptop"&amp#27;[0m &amp#27;[90m# steps.SearchSteps.seeResults(java.lang.String)&amp#27;[0m
+10:43:35.083 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\a64c679ef88c996e18d507cf489b8a9c74669ddb27d25b4d73df1f862ee13e13.png
+10:43:35.084 [main] INFO  -- 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Searching for a product with multiple keywords
+----------------------------------------------------------------------
+]]></system-out>
+    <system-err><![CDATA[Jan 02, 2025 10:43:16 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 131, returning the closest version; found: 130; Please update to a Selenium version that supports CDP version 131
+]]></system-err>
+  </testcase>
+  <testcase name="Searching for a product with special characters" classname="Search Functionality on UI-Testing" time="13.909">
+    <system-out><![CDATA[
+Scenario: Searching for a product with special characters             &amp#27;[90m# src/test/resources/features/search.feature:13&amp#27;[0m
+10:43:35.265 [main] DEBUG io.cucumber.core.plugin.SerenityReporter -- Running feature from file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/search.feature
+10:43:35.266 [main] INFO  -- 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Searching for a product with special characters(search-functionality-on-ui-testing;searching-for-a-product-with-special-characters)
+--------------------------------------------------------------------------------
+10:43:35.342 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Starting Chrome driver instance with capabilities:
+10:43:35.342 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI open the homepage&amp#27;[0m                                           &amp#27;[90m# steps.SearchSteps.openHomePage()&amp#27;[0m
+10:43:46.750 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\5548d9336f27232cb166cbd433544ed181eb7e6095acf4a1c4bb783e99333199.png
+10:43:46.750 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Processing screenshot image in /var/screenshots/screenshot-7780206111038175601
+10:43:46.750 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Saving screenshot to D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\5548d9336f27232cb166cbd433544ed181eb7e6095acf4a1c4bb783e99333199.png
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI search for &amp#27;[0m&amp#27;[32m&amp#27;[1m"laptop - 2022 edition"&amp#27;[0m                           &amp#27;[90m# steps.SearchSteps.searchFor(java.lang.String)&amp#27;[0m
+10:43:48.954 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\870e651830154c8ad7918b3a34fbbf82f3bc8e429d4d92b4163593d2b6ba2840.png
+10:43:48.955 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Processing screenshot image in /var/screenshots/screenshot-3719019570434909124
+10:43:48.956 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Saving screenshot to D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\870e651830154c8ad7918b3a34fbbf82f3bc8e429d4d92b4163593d2b6ba2840.png
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI should see search results related to &amp#27;[0m&amp#27;[32m&amp#27;[1m"laptop - 2022 edition"&amp#27;[0m &amp#27;[90m# steps.SearchSteps.seeResults(java.lang.String)&amp#27;[0m
+10:43:48.997 [main] INFO  -- 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
+
+Searching for a product with special characters
+----------------------------------------------------------------------
+]]></system-out>
+    <system-err><![CDATA[Jan 02, 2025 10:43:36 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 131, returning the closest version; found: 130; Please update to a Selenium version that supports CDP version 131
+]]></system-err>
+  </testcase>
+  <testcase name="Searching for a non-existent product" classname="Search Functionality on UI-Testing" time="43.441">
+    <failure type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError
+	at steps.SearchSteps.verifyNoResults(SearchSteps.java:35)
+	at ✽.I should see a message indicating no search results were found(file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/search.feature:21)
+]]></failure>
+    <system-out><![CDATA[
+Scenario: Searching for a non-existent product                        &amp#27;[90m# src/test/resources/features/search.feature:18&amp#27;[0m
+10:43:49.176 [main] DEBUG io.cucumber.core.plugin.SerenityReporter -- Running feature from file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/search.feature
+10:43:49.177 [main] INFO  -- 
+  _____   ___   ___   _____     ___   _____     _     ___   _____   ___   ___  
+ |_   _| | __| / __| |_   _|   / __| |_   _|   /_\   | _ \ |_   _| | __| |   \ 
+   | |   | _|  \__ \   | |     \__ \   | |    / _ \  |   /   | |   | _|  | |) |
+   |_|   |___| |___/   |_|     |___/   |_|   /_/ \_\ |_|_\   |_|   |___| |___/ 
+
+Searching for a non-existent product(search-functionality-on-ui-testing;searching-for-a-non-existent-product)
+--------------------------------------------------------------------------------
+10:43:49.227 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Starting Chrome driver instance with capabilities:
+10:43:49.228 [main] INFO net.serenitybdd.core.webdriver.driverproviders.ChromeDriverProvider -- Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [remote-allow-origins=*], extensions: []}}
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI open the homepage&amp#27;[0m                                           &amp#27;[90m# steps.SearchSteps.openHomePage()&amp#27;[0m
+10:44:27.135 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\7b70bf6077a67c59868423158b5031be039298534372a90ab2578a1f823849b4.png
+10:44:27.135 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Processing screenshot image in /var/screenshots/screenshot-4061401969062073341
+10:44:27.135 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Saving screenshot to D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\7b70bf6077a67c59868423158b5031be039298534372a90ab2578a1f823849b4.png
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mI search for &amp#27;[0m&amp#27;[32m&amp#27;[1m"xyz123nonexistentproduct"&amp#27;[0m                        &amp#27;[90m# steps.SearchSteps.searchFor(java.lang.String)&amp#27;[0m
+10:44:30.172 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\ac7fce124792d1a9f343efc7e33ee6f4c0aa60b41d2e4a8e96b583071418154f.png
+10:44:30.173 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Processing screenshot image in /var/screenshots/screenshot-9086211408957540607
+10:44:30.173 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine -- Saving screenshot to D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\ac7fce124792d1a9f343efc7e33ee6f4c0aa60b41d2e4a8e96b583071418154f.png
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mI should see a message indicating no search results were found&amp#27;[0m &amp#27;[90m# steps.SearchSteps.verifyNoResults()&amp#27;[0m
+      &amp#27;[31mjava.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at steps.SearchSteps.verifyNoResults(SearchSteps.java:35)
+	at ✽.I should see a message indicating no search results were found(file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/search.feature:21)
+&amp#27;[0m
+10:44:32.301 [main] DEBUG net.serenitybdd.core.photography.Darkroom -- Send negative for processing for D:\L4\L4S1\ITQA\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\target\site\serenity\ac7fce124792d1a9f343efc7e33ee6f4c0aa60b41d2e4a8e96b583071418154f.png
+10:44:32.387 [main] ERROR  -- 
+  _____   ___   ___   _____     ___     _     ___   _      ___   ___  
+ |_   _| | __| / __| |_   _|   | __|   /_\   |_ _| | |    | __| |   \ 
+   | |   | _|  \__ \   | |     | _|   / _ \   | |  | |__  | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___| |____| |___| |___/ 
+
+Searching for a non-existent product
+-----------------------------------------------------------------------
+10:44:32.387 [main] DEBUG  -- RELATED ISSUES: 
+10:44:32.388 [main] ERROR  --     Test failed at step: Then I should see a message indicating no search results were found
+10:44:32.388 [main] ERROR  --     
+]]></system-out>
+    <system-err><![CDATA[Jan 02, 2025 10:43:50 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 131, returning the closest version; found: 130; Please update to a Selenium version that supports CDP version 131
+]]></system-err>
+  </testcase>
+</testsuite>
