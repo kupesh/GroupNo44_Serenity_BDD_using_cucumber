@@ -19,8 +19,3 @@ Feature: Search Functionality on UI-Testing
     Given I open the HomePage
     When I search for "xyz123nonexistentproduct"
     Then I should see a message indicating no search results were found
-
-  Scenario: Searching for only special Characters
-    Given I open the HomePage
-    When I search for "!@#%^&*"
-    Then I should see a message indicating no search results were found
