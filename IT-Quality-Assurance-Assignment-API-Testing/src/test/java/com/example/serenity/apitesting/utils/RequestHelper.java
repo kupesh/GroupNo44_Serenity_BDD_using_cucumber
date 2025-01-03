@@ -37,7 +37,6 @@ public class RequestHelper {
         RequestSpecification request = RestAssured.given()
                 .baseUri(this.baseUri)
                 .basePath(this.endpoint)
-                .header("Content-Type", "application/json")
                 .accept(ContentType.JSON);
 
 
