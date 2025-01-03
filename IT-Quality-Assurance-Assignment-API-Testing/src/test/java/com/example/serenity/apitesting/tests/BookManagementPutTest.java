@@ -39,7 +39,7 @@ public class BookManagementPutTest extends BaseTest {
     public void theLibraryAPIIsRunningAdmin() {
         requestHelper = new RequestHelper(BASE_URI);
         Response healthResponse = requestHelper
-                .withEndpoint(GET_BOOKS_ENDPOINT)
+                .withEndpoint(BOOKS_ENDPOINT)
                 .withAuth(ADMIN_USERNAME, ADMIN_PASSWORD)
                 .sendRequest("GET");
         assertThat(healthResponse.getStatusCode(), is(200));
@@ -49,7 +49,7 @@ public class BookManagementPutTest extends BaseTest {
     public void theLibraryAPIIsRunningUser() {
         requestHelper = new RequestHelper(BASE_URI);
         Response healthResponse = requestHelper
-                .withEndpoint(GET_BOOKS_ENDPOINT)
+                .withEndpoint(BOOKS_ENDPOINT)
                 .withAuth(USER_USERNAME, USER_PASSWORD)
                 .sendRequest("GET");
         assertThat(healthResponse.getStatusCode(), is(200));
