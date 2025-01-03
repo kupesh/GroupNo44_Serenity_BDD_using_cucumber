@@ -127,7 +127,13 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.1.2</version>
                 <configuration>
-                    <skip>true</skip>
+
+                    <skip>false</skip>
+                    <testFailureIgnore>true</testFailureIgnore>
+<!--                    <includes>-->
+<!--                        <include>**/*Test.java</include>-->
+<!--                    </includes>-->
+
                 </configuration>
             </plugin>
             <plugin>
@@ -137,9 +143,9 @@
                     <skip>false</skip>
                     <includes>
                         <include>**/*Test.java</include>
-                        <include>**/Test*.java</include>
-                        <include>**/*TestSuite.java</include>
-                        <include>**/When*.java</include>
+<!--                        <include>**/Test*.java</include>-->
+<!--                        <include>**/*TestSuite.java</include>-->
+<!--                        <include>**/When*.java</include>-->
                     </includes>
                     <systemPropertyVariables>
                         <webdriver.base.url>${webdriver.base.url}</webdriver.base.url>
