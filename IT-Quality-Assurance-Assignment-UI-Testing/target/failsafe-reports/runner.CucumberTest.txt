@@ -1,9 +1,9 @@
 -------------------------------------------------------------------------------
 Test set: runner.CucumberTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 63.47 s <<< FAILURE! -- in runner.CucumberTest
-Search Functionality on UI-Testing.Searching for only special Characters -- Time elapsed: 10.74 s <<< FAILURE!
+Tests run: 10, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 183.6 s <<< FAILURE! -- in runner.CucumberTest
+Search Functionality on UI-Testing.Searching for only special Characters -- Time elapsed: 15.86 s <<< FAILURE!
 java.lang.AssertionError
-	at steps.SearchSteps.verifyNoResults(SearchSteps.java:47)
-	at ✽.I should see a message indicating no search results were found(file:///Users/udanakodikara/Documents/UOM/Level%204/ITQA/Group%20Project/Main%20Project/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/search.feature:26)
+	at steps.SearchSteps.verifyNoResults(SearchSteps.java:46)
+	at ✽.I should see a message indicating no search results were found(file:///D:/L4/L4S1/ITQA/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/resources/features/search.feature:26)
 
