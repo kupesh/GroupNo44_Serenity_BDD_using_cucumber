@@ -1,69 +1,44 @@
 package steps;
 
-import net.serenitybdd.core.pages.PageObject;
-import io.cucumber.java.en.*;
-import org.assertj.core.api.Assertions; // For improved assertions with AssertJ
+import pages.ProductDisplayPage;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import net.serenitybdd.annotations.Steps;
+import static org.junit.Assert.assertTrue;
 
-public class ProductDisplaySteps extends PageObject {
+public class ProductDisplaySteps {
 
-    @Given("I navigate to the Singer website")
-    public void navigateToWebsite() {
-        // Navigate to the specified URL
-        openUrl("https://www.singersl.com");
+    @Steps
+    private ProductDisplayPage productDisplayPage;
+
+    @Given("I am on the product listing page to check the name")
+    public void i_am_on_the_product_listing_page_to_check_the_name() {
+        productDisplayPage.openProductPage();
     }
 
-    @When("I view the product listings")
-    public void viewProductListings() {
-        // Scroll down gradually to load product listings
-        for (int i = 0; i < 5; i++) {
-            evaluateJavascript("window.scrollBy(0, 500);"); // Scroll 500 pixels down
-            waitABit(1000); // Wait for 1 second after each scroll
-        }
-    
-        // Ensure products are loaded by checking product container visibility
-        waitFor(".product-container"); // Replace with actual selector for the product container
-    
-        // Click the first product for interaction (optional)
-        if (!$$(".product-container").isEmpty()) {
-            $$(".product-container").get(0).click(); // Clicks the first product
-        } else {
-            throw new AssertionError("No products found on the page!");
-        }
-    
-        // Log the total number of products displayed
-        System.out.println("Total number of products displayed: " + $$(".product-container").size());
-    }
-    
-
-    @Then("all products should have visible and correctly loaded images")
-    public void verifyProductImages() {
-        // Assert that all product images are visible
-        Assertions.assertThat(
-            $$(".product-image").stream().allMatch(image -> image.isVisible())
-        ).isTrue();
+    @When("I check if the product name is visible")
+    public void i_check_if_the_product_name_is_visible() {
+        assertTrue("Product name should be visible", productDisplayPage.isProductNameVisible());
     }
 
-    @Then("all products should have visible and readable titles")
-    public void verifyProductTitles() {
-        // Assert that product titles are visible and not empty
-        Assertions.assertThat(
-            $$(".product-title").stream().allMatch(title -> !title.getText().isEmpty())
-        ).isTrue();
+    @Given("I am on the product listing page to check the image")
+    public void i_am_on_the_product_listing_page_to_check_the_image() {
+        productDisplayPage.openProductPage();
     }
 
-    @Then("all products should have clearly formatted prices")
-    public void verifyProductPrices() {
-        // Assert that prices match the specified pattern
-        Assertions.assertThat(
-            $$(".product-price").stream().allMatch(price -> price.getText().matches("Rs\\.\\s[0-9,]+"))
-        ).isTrue();
+    @When("I check if the product image is visible")
+    public void i_check_if_the_product_image_is_visible() {
+        assertTrue("Product image should be visible", productDisplayPage.isProductImageVisible());
     }
 
-    @Then("all sale items should have visible sale tags")
-    public void verifySaleTags() {
-        // Assert that all sale tags are visible
-        Assertions.assertThat(
-            $$(".sale-tag").stream().allMatch(tag -> tag.isVisible())
-        ).isTrue();
+    @Given("I am on the product listing page to check the price")
+    public void i_am_on_the_product_listing_page_to_check_the_price() {
+        productDisplayPage.openProductPage();
+    }
+
+    @When("I check if the product price is visible")
+    public void i_check_if_the_product_price_is_visible() {
+        assertTrue("Product price should be visible", productDisplayPage.isProductPriceVisible());
     }
 }
