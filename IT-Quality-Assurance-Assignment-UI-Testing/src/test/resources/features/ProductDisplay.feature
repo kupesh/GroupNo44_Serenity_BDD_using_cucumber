@@ -1,13 +1,6 @@
-Feature: Product Display on the Product Listing Page
+Feature: Product Availability and Details
 
-  Scenario: Checking the product name
-    Given I am on the product listing page to check the name
-    When I check if the product name is visible
-
-  Scenario: Checking the product image
-    Given I am on the product listing page to check the image
-    When I check if the product image is visible
-
-  Scenario: Checking the product price
-    Given I am on the product listing page to check the price
-    When I check if the product price is visible
+  Scenario: Verify product availability and details
+    Given I open the product page for Dell Optical Wired Mouse MS116
+    When I check if the product is available
+    Then I should see the product image and price displayed
