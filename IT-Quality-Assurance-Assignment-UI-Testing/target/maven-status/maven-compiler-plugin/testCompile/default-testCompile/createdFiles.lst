@@ -1,7 +1,12 @@
 pages\ProductDetailsPage.class
+pages\ProductPage.class
 pages\LoginPage.class
+pages\CartPage.class
 pages\HomePage.class
 config\Constants.class
 steps\SearchSteps.class
-steps\ProductDetailsSteps.class
+pages\ProductDescriptivePage.class
+steps\ProductDisplaySteps.class
 runner\CucumberTest.class
+steps\CartSteps.class
+steps\ProductDetailsSteps.class
