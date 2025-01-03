@@ -1,3 +1,4 @@
+steps\FilterSteps.class
 pages\ProductDetailsPage.class
 pages\ProductPage.class
 pages\LoginPage.class
@@ -8,5 +9,9 @@ steps\SearchSteps.class
 pages\ProductDescriptivePage.class
 steps\ProductDisplaySteps.class
 runner\CucumberTest.class
+pages\ProductDisplayPage.class
+steps\CurrencySteps.class
+pages\CurrencyPage.class
+pages\FilterPage.class
 steps\CartSteps.class
 steps\ProductDetailsSteps.class
