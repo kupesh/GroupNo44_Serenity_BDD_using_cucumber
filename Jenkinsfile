@@ -20,13 +20,13 @@ pipeline {
                     }
                     post {
                         always {
-                            publishHTML(target: [
-                                allowMissing: true,
-                                alwaysLinkToLastBuild: true,
-                                keepAll: true,
-                                reportDir: 'target/site/serenity',
-                                reportFiles: 'index.html',
-                                reportName: 'Serenity API Test Report'
+                            publishHTML (target : [allowMissing: false,
+                            alwaysLinkToLastBuild: true,
+                            keepAll: true,
+                            reportDir: 'API-Testing/target/site/serenity',
+                            reportFiles: 'index.html',
+                            reportName: 'API Serenity Reports',
+                            reportTitles: 'API Serenity Test Report'
                             ])
                         }
                     }
@@ -34,18 +34,18 @@ pipeline {
                 stage('UI Tests') {
                     steps {
                         dir('IT-Quality-Assurance-Assignment-UI-Testing') {
-                            sh "${MAVEN_HOME}/bin/mvn clean verify"
+                            sh "${MAVEN_HOME}/bin/mvn clean install"
                         }
                     }
                     post {
                         always {
-                            publishHTML(target: [
-                                allowMissing: true,
-                                alwaysLinkToLastBuild: true,
-                                keepAll: true,
-                                reportDir: 'target/site/serenity',
-                                reportFiles: 'index.html',
-                                reportName: 'Serenity UI Test Report'
+                            publishHTML (target : [allowMissing: false,
+                            alwaysLinkToLastBuild: true,
+                            keepAll: true,
+                            reportDir: 'UI-Testing/target/site/serenity',
+                            reportFiles: 'index.html',
+                            reportName: 'UI Serenity Reports',
+                            reportTitles: 'UI Serenity Test Report'
                             ])
                         }
                     }
