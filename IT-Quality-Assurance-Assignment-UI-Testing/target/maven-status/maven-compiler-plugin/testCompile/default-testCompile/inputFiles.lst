@@ -1,4 +1,12 @@
-/Users/udanakodikara/Documents/UOM/Level 4/ITQA/Group Project/Main Project/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/java/steps/SearchSteps.java
-/Users/udanakodikara/Documents/UOM/Level 4/ITQA/Group Project/Main Project/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/java/pages/HomePage.java
-/Users/udanakodikara/Documents/UOM/Level 4/ITQA/Group Project/Main Project/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/java/config/Constants.java
-/Users/udanakodikara/Documents/UOM/Level 4/ITQA/Group Project/Main Project/IT-Quality-Assurance-Assignment/IT-Quality-Assurance-Assignment-UI-Testing/src/test/java/runner/CucumberTest.java
+E:\L4S1\IS-3440\Assignmnet\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\src\test\java\pages\ProductPage.java
+E:\L4S1\IS-3440\Assignmnet\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\src\test\java\pages\ProductDescriptivePage.java
+E:\L4S1\IS-3440\Assignmnet\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\src\test\java\pages\ProductDetailsPage.java
+E:\L4S1\IS-3440\Assignmnet\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\src\test\java\config\Constants.java
+E:\L4S1\IS-3440\Assignmnet\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\src\test\java\steps\ProductDetailsSteps.java
+E:\L4S1\IS-3440\Assignmnet\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\src\test\java\steps\ProductDisplaySteps.java
+E:\L4S1\IS-3440\Assignmnet\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\src\test\java\pages\CartPage.java
+E:\L4S1\IS-3440\Assignmnet\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\src\test\java\pages\LoginPage.java
+E:\L4S1\IS-3440\Assignmnet\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\src\test\java\pages\HomePage.java
+E:\L4S1\IS-3440\Assignmnet\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\src\test\java\steps\CartSteps.java
+E:\L4S1\IS-3440\Assignmnet\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\src\test\java\runner\CucumberTest.java
+E:\L4S1\IS-3440\Assignmnet\IT-Quality-Assurance-Assignment\IT-Quality-Assurance-Assignment-UI-Testing\src\test\java\steps\SearchSteps.java
