@@ -1,4 +1,4 @@
-package com.example.serenity.apitesting.tests;
+package com.example.serenity.apitesting.tests.post;
 
 import com.example.serenity.apitesting.base.BaseTest;
 import com.example.serenity.apitesting.models.Book;
