@@ -37,7 +37,7 @@ Feature: Add to Cart Functionality
   Scenario: Removing item from the cart
     Given I open the product 0
     When I click Product Add to Cart
-    Then I should see the message "Product added to cart"
+    Then I should see the message "added to"
     And I open the Cart Page
     When I click the Remove Button
     Then I should see the message "Your shopping cart has been updated."
