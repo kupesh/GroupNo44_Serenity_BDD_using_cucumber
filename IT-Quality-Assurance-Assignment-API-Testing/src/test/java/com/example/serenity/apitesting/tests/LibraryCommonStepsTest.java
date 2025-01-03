@@ -48,7 +48,7 @@ public class LibraryCommonStepsTest  extends BaseTest {
     @Given("the library API is running and a book is created")
     public void theLibraryAPIIsRunningAndBookCreated() {
         RequestHelper requestHelper = new RequestHelper(BASE_URI);
-        Response response = requestHelper.fetchBook(GET_BOOKS_ENDPOINT, ADMIN_USERNAME, ADMIN_PASSWORD);
+        Response response = requestHelper.fetchBook(BOOKS_ENDPOINT, ADMIN_USERNAME, ADMIN_PASSWORD);
         assertThat("API is not running", response.getStatusCode(), is(200));
 
 //        // Create a book

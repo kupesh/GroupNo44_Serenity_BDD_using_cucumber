@@ -22,7 +22,7 @@ public class LibraryGetByIdWithoutAuthTest extends BaseTest {
         book = null;
 
         RequestHelper requestHelper = new RequestHelper(BASE_URI);
-        response = requestHelper.withEndpoint(GET_BOOKS_ENDPOINT + "/" + bookId).sendRequest("GET");
+        response = requestHelper.withEndpoint(BOOKS_ENDPOINT + "/" + bookId).sendRequest("GET");
 
     }
 
@@ -32,7 +32,7 @@ public class LibraryGetByIdWithoutAuthTest extends BaseTest {
         book = null;
 
         RequestHelper requestHelper = new RequestHelper(BASE_URI);
-        response = requestHelper.fetchBookById(GET_BOOKS_ENDPOINT, bookId, "RandomUser", "strong-password");
+        response = requestHelper.fetchBookById(BOOKS_ENDPOINT, bookId, "RandomUser", "strong-password");
 //        book = response.body().as(Book.class);
     }
 

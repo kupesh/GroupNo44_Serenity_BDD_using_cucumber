@@ -8,7 +8,6 @@ public class Constants {
     public static final String USER_PASSWORD = "password";
 
     // API Endpoints
-    public static final String GET_BOOKS_ENDPOINT = "/books";
-    public static final String DELETE_BOOK_ENDPOINT = "/books/{id}";
-    public static final String CREATE_BOOK_ENDPOINT = "/books";
+    public static final String BOOKS_ENDPOINT = "/books";
+
 }

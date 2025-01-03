@@ -25,7 +25,7 @@ public class LibraryGetByIdNonExistTest extends BaseTest {
         book = null;
 
         RequestHelper requestHelper = new RequestHelper(BASE_URI);
-        response = requestHelper.fetchBookById(GET_BOOKS_ENDPOINT, bookId, ADMIN_USERNAME, ADMIN_PASSWORD);
+        response = requestHelper.fetchBookById(BOOKS_ENDPOINT, bookId, ADMIN_USERNAME, ADMIN_PASSWORD);
 
     }
 
@@ -35,7 +35,7 @@ public class LibraryGetByIdNonExistTest extends BaseTest {
         book = null;
 
         RequestHelper requestHelper = new RequestHelper(BASE_URI);
-        response = requestHelper.fetchBookById(GET_BOOKS_ENDPOINT, bookId, USER_USERNAME, USER_PASSWORD);
+        response = requestHelper.fetchBookById(BOOKS_ENDPOINT, bookId, USER_USERNAME, USER_PASSWORD);
 
     }
 

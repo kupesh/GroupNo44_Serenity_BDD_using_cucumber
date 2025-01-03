@@ -25,7 +25,7 @@ public class LibraryGetTest extends BaseTest {
     public void fetchAllBooksWithValidCredentialsAdmin() {
         Type bookListType = new TypeToken<List<Book>>() {}.getType();
         RequestHelper requestHelper = new RequestHelper( BASE_URI);
-        response = requestHelper.fetchBook(GET_BOOKS_ENDPOINT, ADMIN_USERNAME, ADMIN_PASSWORD);
+        response = requestHelper.fetchBook(BOOKS_ENDPOINT, ADMIN_USERNAME, ADMIN_PASSWORD);
         bookList = response.body().as(bookListType);
     }
 
@@ -33,7 +33,7 @@ public class LibraryGetTest extends BaseTest {
     public void fetchAllBooksWithValidCredentialsUser() {
         Type bookListType = new TypeToken<List<Book>>() {}.getType();
         RequestHelper requestHelper = new RequestHelper( BASE_URI);
-        response = requestHelper.fetchBook(GET_BOOKS_ENDPOINT, USER_USERNAME, USER_PASSWORD);
+        response = requestHelper.fetchBook(BOOKS_ENDPOINT, USER_USERNAME, USER_PASSWORD);
         bookList = response.body().as(bookListType);
     }
 

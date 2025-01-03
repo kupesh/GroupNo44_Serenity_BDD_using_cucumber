@@ -29,6 +29,12 @@ public class RequestHelper {
                 .sendRequest("GET");
     }
 
+    public Response deleteBookById(String endpoint, Integer bookId, String username, String password) {
+        return this.withEndpoint(endpoint + "/" + bookId)
+                .withAuth(username, password)
+                .sendRequest("DELETE");
+    }
+
     public RequestHelper withEndpoint(String endpoint) {
         this.endpoint = endpoint;
         return this;

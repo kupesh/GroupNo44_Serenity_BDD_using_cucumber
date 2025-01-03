@@ -16,13 +16,13 @@ public class LibraryWithoutAuthGetTest extends BaseTest {
     @When("User fetches all books without providing authentication")
     public void fetchBooksWithoutAuthentication() {
         RequestHelper requestHelper = new RequestHelper(BASE_URI);
-        response = requestHelper.withEndpoint(GET_BOOKS_ENDPOINT).sendRequest("GET"); // No authentication headers included
+        response = requestHelper.withEndpoint(BOOKS_ENDPOINT).sendRequest("GET"); // No authentication headers included
     }
 
     @When("User fetches all books with providing invalid credentials")
     public void nonRegisteredUserFetchesAllBooks() {
         RequestHelper requestHelper = new RequestHelper(BASE_URI);
-        response = requestHelper.fetchBook(GET_BOOKS_ENDPOINT, "RandomUser", "strong-password");
+        response = requestHelper.fetchBook(BOOKS_ENDPOINT, "RandomUser", "strong-password");
     }
 
     @Then("Then the response code should be {int}")
