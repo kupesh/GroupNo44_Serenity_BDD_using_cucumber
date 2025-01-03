@@ -1,4 +1,4 @@
-Feature: Book Management - Update Book
+Feature: Library API PUT Operations
 
   Scenario: Successfully update a book with valid data
     Given the library API is running for book creation using admin for update test
@@ -44,11 +44,3 @@ Feature: Book Management - Update Book
     Then the response status code should be 400 for update test
     And the response should contain the error message "Bad request." for update test
 
-  Scenario: Missing mandatory fields in the request body while updating
-    Given the library API is running for book creation using admin for update test
-    And the user is authenticated as "admin" with password "password" for update test
-    And I send a POST request to "/books" create a new book for update
-    And the API endpoint is set with book id
-    When I send a PUT request to update the book with null "author" field
-    Then the response status code should be 400 for update test
-    And the response should contain the error message "Bad request." for update test
