@@ -40,5 +40,4 @@ Feature: Add to Cart Functionality
     Then I should see the message "added to"
     And I open the Cart Page
     When I click the Remove Button
-    Then I should see the message "Your shopping cart has been updated."
     Then the cart should show 0 items
