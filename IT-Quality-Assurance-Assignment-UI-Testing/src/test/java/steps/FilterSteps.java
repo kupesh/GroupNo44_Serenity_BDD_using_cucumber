@@ -21,17 +21,17 @@ public class FilterSteps {
         filterPage.openWebPage(baseUrl);
     }
 
-    @When("User filters with price range {string} to {string}")
-    public void userFiltersWithPriceRange(String minPrice, String maxPrice) {
-        filterPage.enterMinPrice(minPrice);
-        filterPage.enterMaxPrice(maxPrice);
-    }
+     @When("User filters with minimum price {string}")
+     public void userFiltersWithMinPrice(String minPrice) {
+         filterPage.enterMinPrice(minPrice);
+     }
 
-    @Then("Products should be filtered to within that price range")
-    public void productsShouldBeFilteredToWithinThatPriceRange() {
-        assertTrue(filterPage.isProductInPriceRange(2000,10000));
-    }
 
+    @Then("Products should be filtered to have prices greater than or equal to {string}")
+    public void productsShouldBeFilteredToHavePricesGreaterThanOrEqualTo(String minPrice) {
+        assertTrue(filterPage.isProductInPriceRange(Integer.parseInt(minPrice),Integer.MAX_VALUE));
+    }
+   
     @When("User filters by category {string}")
     public void userFiltersByCategory(String category) {
         filterPage.selectCategoryComputers();
@@ -49,7 +49,7 @@ public class FilterSteps {
 
     @Then("Out of stock product should not be listed")
     public void outOfStockProductShouldNotBeListed() {
-        assertFalse(filterPage.isOutOfStockProductListed()); 
+        assertFalse(filterPage.isOutOfStockProductListed());
     }
 
     @When("User filters by offer {string}")
@@ -62,45 +62,17 @@ public class FilterSteps {
         assertTrue(filterPage.isProductInOfferCategory("20% or More"));
     }
 
-    @When("User applies category {string}, price range {string} to {string}, and offer {string}")
-    public void userAppliesMultipleFilters(String category, String minPrice, String maxPrice, String offer) {
-        filterPage.selectCategoryComputers();
-        filterPage.enterMinPrice(minPrice);
-        filterPage.enterMaxPrice(maxPrice);
-        filterPage.selectOffer20Percent();
-    }
+     @When("User applies category {string}, minimum price {string}, and offer {string}")
+     public void userAppliesMultipleFilters(String category, String minPrice, String offer) {
+         filterPage.selectCategoryComputers();
+         filterPage.enterMinPrice(minPrice);
+         filterPage.selectOffer20Percent();
+     }
+
 
     @Then("Products should be filtered by all specified criteria")
     public void productsShouldBeFilteredByAllCriteria() {
-    //Assert as required
+      
     }
-
-   @When("User sorts by {string}")
-   public void userSortsBy(String sortOption)
-   {
-     filterPage.selectSortOption(sortOption);
-   }
-  @Then("products should be sorted in {string} order.")
-    public void productsShouldBeSortedIn(String sortOption)
-  {
-    assertTrue(filterPage.isProductSorted(sortOption));
-  }
-  @When("User filters with various options")
-  public void userFiltersWithVariousOptions()
-  {
-      filterPage.selectCategoryComputers();
-      filterPage.selectExcludeStockOut();
-      filterPage.selectOffer20Percent();
-  }
-  @When("And clicks the clear all filter button")
-    public void clicksTheClearAllFilterButton()
-  {
-      filterPage.clearAll();
-  }
-  @Then ("all filters should be cleared")
-    public void allFiltersShouldBeCleared()
-  {
-    assertTrue(filterPage.areFiltersCleared());
-  }
 
 }

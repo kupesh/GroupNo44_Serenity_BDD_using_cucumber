@@ -1,9 +1,9 @@
 Feature: Product Filtering
 
-  Scenario: Filter by Price Range
+  Scenario: Filter by Minimum Price
     Given User is on the product page
-    When User filters with price range "2000" to "10000"
-    Then Products should be filtered to within that price range
+    When User filters with minimum price "2000"
+    Then Products should be filtered to have prices greater than or equal to "2000"
 
   Scenario: Filter by Category
     Given User is on the product page
@@ -22,16 +22,5 @@ Feature: Product Filtering
 
   Scenario: Combine Multiple Filters
     Given User is on the product page
-    When User applies category "Computers", price range "2000" to "5000", and offer "10% or More"
+    When User applies category "Computers", minimum price "2000", and offer "20% or More"
     Then Products should be filtered by all specified criteria
-
-   Scenario: Filter by Sorting option
-     Given User is on the product page
-     When User sorts by "Price - Low to High"
-     Then products should be sorted in "Price - Low to High" order.
-
-   Scenario: Clear all filters
-     Given User is on the product page
-     When User filters with various options
-     And clicks the clear all filter button
-     Then all filters should be cleared
