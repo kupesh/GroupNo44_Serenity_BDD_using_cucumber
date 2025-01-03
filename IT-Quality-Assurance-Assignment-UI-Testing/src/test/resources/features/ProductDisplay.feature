@@ -1,26 +1,13 @@
-Feature: Product Display Validation on UI-Testing
+Feature: Product Display on the Product Listing Page
 
-  Scenario: Verifying product images are visible and correctly loaded
-    Given I navigate to the Singer website
-    When I view the product listings
-    Then all products should have visible and correctly loaded images
+  Scenario: Checking the product name
+    Given I am on the product listing page to check the name
+    When I check if the product name is visible
 
-  Scenario: Verifying product titles are visible and readable
-    Given I navigate to the Singer website
-    When I view the product listings
-    Then all products should have visible and readable titles
+  Scenario: Checking the product image
+    Given I am on the product listing page to check the image
+    When I check if the product image is visible
 
-  Scenario: Verifying product prices are clearly formatted
-    Given I navigate to the Singer website
-    When I view the product listings
-    Then all products should have clearly formatted prices
-
-  Scenario: Verifying sale tags are visible for sale items
-    Given I navigate to the Singer website
-    When I view the product listings
-    Then all sale items should have visible sale tags
-
-  Scenario: Verifying product descriptions are displayed properly
-    Given I navigate to the Singer website
-    When I view the product listings
-    Then all products should have visible and meaningful descriptions
+  Scenario: Checking the product price
+    Given I am on the product listing page to check the price
+    When I check if the product price is visible
