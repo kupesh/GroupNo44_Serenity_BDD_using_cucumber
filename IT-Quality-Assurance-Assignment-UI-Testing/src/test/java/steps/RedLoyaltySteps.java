@@ -52,6 +52,17 @@ public class RedLoyaltySteps {
         redLoyaltyPage.clickSubmitButton();
     }
 
+    @Then("I should be redirected to the form page")
+    public void verifyFormPageRedirection() {
+        assertTrue(redLoyaltyPage.isOnFormPage());
+    }
+
+    @Given("I am on the form page")
+    public void openFormPage() {
+        redLoyaltyPage.openFormPageDirectly();
+    }
+
+
     @Then("I should see a validation message asking to enter a NIC")
     public void verifyValidationMessage() {
         String validationMessage = redLoyaltyPage.getValidationMessage();

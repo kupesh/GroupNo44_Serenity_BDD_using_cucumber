@@ -10,12 +10,11 @@ import java.time.Duration;
 
 public class RedLoyaltyPage extends PageObject {
 
-    private final String redLoyaltyTabSelector = "a[href='https://www.singersl.com/added-services/singer-red-loyalty-program']";
-    private final String nicInputFieldSelector = "MyNIC";
-    private final String submitButtonSelector = "submit";
-    private final String pointsDisplaySelector = "div[style*='text-align:center;'] span b";
-    private final String errorMessageSelector = "div[style='text-align:center;']";
-    private final String checkRedPointsButtonSelector = "a.btn.mt-4.red-btn";
+    final String redLoyaltyTabSelector = "a[href='https://www.singersl.com/added-services/singer-red-loyalty-program']";
+
+    final String pointsDisplaySelector = "div[style*='text-align:center;'] span b";
+    final String errorMessageSelector = "div[style='text-align:center;']";
+    final String checkRedPointsButtonSelector = "a.btn.mt-4.red-btn";
 
 
     public void clickRedLoyaltyTab() {
@@ -27,19 +26,44 @@ public class RedLoyaltyPage extends PageObject {
         WebElementFacade checkRedPointsButton = find(By.cssSelector(checkRedPointsButtonSelector));
         checkRedPointsButton.waitUntilClickable().click();
 
+    }
+
+    public boolean isOnFormPage() {
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.urlContains("#data-fancybox"));
+        wait.until(ExpectedConditions.urlContains("formPage")); // Replace "formPage" with the actual URL or identifier of the form page.
+        return getDriver().getCurrentUrl().contains("formPage");
+    }
+
+    public void openFormPageDirectly() {
+        getDriver().get("https://www.singersl.com/added-services/singer-red-loyalty-program#data-fancybox"); // Update with the actual URL.
     }
 
 
     public void enterNIC(String nic) {
-        WebElementFacade nicInputField = find(By.cssSelector(nicInputFieldSelector));
-        nicInputField.waitUntilClickable().type(nic);
+
+        System.out.println("Locating NIC input field using XPath: //*[@id='MyNIC']");
+        WebElementFacade nicInputField = find(By.xpath("//input[@id='MyNIC']"));
+//        WebElement field = driver.findElement(By.xpath("//form[@id='formID']//input[@id='MyNIC']"));
+
+        // Wait until the field is visible
+        nicInputField.waitUntilVisible();
+
+        // Click the field to ensure it is enabled
+        nicInputField.click();
+
+        // Wait until the field becomes enabled and clickable
+        nicInputField.waitUntilEnabled().waitUntilClickable();
+
+        // Type the NIC value
+        nicInputField.type(nic);
+
     }
 
     public void clickSubmitButton() {
-        WebElementFacade submitButton = find(By.cssSelector(submitButtonSelector));
-        submitButton.waitUntilClickable().click();
+
+        WebElementFacade submitButton = find(By.xpath("//*[@id=\"submit\"]"));
+        submitButton.waitUntilVisible().waitUntilClickable().click();
+
     }
 
     public String getPointsDisplayMessage() {
@@ -48,8 +72,12 @@ public class RedLoyaltyPage extends PageObject {
     }
 
     public String getValidationMessage() {
-        WebElementFacade nicInputField = find(By.cssSelector(nicInputFieldSelector));
+
+        WebElementFacade nicInputField = find(By.xpath("//*[@id='MyNIC']"));
+        nicInputField.waitUntilVisible().waitUntilClickable().click();
         return nicInputField.getAttribute("validationMessage");
+
+
     }
 
 
