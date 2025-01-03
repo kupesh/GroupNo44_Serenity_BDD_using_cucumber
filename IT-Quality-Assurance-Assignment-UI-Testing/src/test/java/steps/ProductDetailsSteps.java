@@ -74,42 +74,34 @@ public class ProductDetailsSteps {
 
     @Then("I should see the product title {string}")
     public void i_should_see_the_product_title(String productTitle) {
-        // Add code to verify that the product title is displayed
     }
 
     @Then("I should see a product description that is not empty")
     public void i_should_see_a_product_description_that_is_not_empty() {
-        // Add code to verify the product description is not empty
     }
 
     @Then("I should see a price displayed in {string}")
     public void i_should_see_a_price_displayed_in(String price) {
-        // Add code to verify that the price is displayed correctly
     }
 
     @Then("I should see a high-quality main product image")
     public void i_should_see_a_high_quality_main_product_image() {
-        // Add code to verify that the main product image is of high quality
     }
 
     @Then("I should see a message indicating {string}")
     public void i_should_see_a_message_indicating(String message) {
-        // Add code to verify that the correct message is displayed
     }
 
     @Then("the {string} button should be {string}")
     public void the_button_should_be(String button, String state) {
-        // Add code to verify the button state (e.g., enabled, disabled)
     }
 
     @Then("I should be able to navigate through the image gallery")
     public void i_should_be_able_to_navigate_through_the_image_gallery() {
-        // Add code to verify the image gallery navigation functionality
     }
 
     @Then("I should see the zoom feature working on the product image")
     public void i_should_see_the_zoom_feature_working_on_the_product_image() {
-        // Add code to verify the zoom feature on the product image
     }
 
 }
