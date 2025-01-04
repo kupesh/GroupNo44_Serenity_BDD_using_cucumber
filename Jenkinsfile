@@ -15,6 +15,7 @@ pipeline {
                 stage('API Tests') {
                     steps {
                         dir('IT-Quality-Assurance-Assignment-API-Testing') {
+                            echo "MAVEN_HOME is: ${MAVEN_HOME}" // Debugging line
                             sh "${MAVEN_HOME}/bin/mvn clean verify"
                         }
                     }
@@ -34,6 +35,7 @@ pipeline {
                 stage('UI Tests') {
                     steps {
                         dir('IT-Quality-Assurance-Assignment-UI-Testing') {
+                            echo "MAVEN_HOME is: ${MAVEN_HOME}" //
                             sh "${MAVEN_HOME}/bin/mvn clean install"
                         }
                     }
