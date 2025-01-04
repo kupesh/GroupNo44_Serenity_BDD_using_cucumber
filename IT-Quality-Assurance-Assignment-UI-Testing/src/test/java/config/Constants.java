@@ -1,15 +1,15 @@
 package config;
 
 public class Constants {
-    public static final String USERNAME = "chipseyofficial@gmail.com";
-    public static final String PASSWORD = "Pass123#";
+    public static final String USERNAME = ConfigLoader.getProperty("username");
+    public static final String PASSWORD = ConfigLoader.getProperty("password");
 
     // API Endpoints
-    public static final String BASE_URL = "https://www.singersl.com";
-    public static final String HOME_PAGE_ENDPOINT = "/";
-    public static final String PRODUCT_PAGE_ENDPOINT = "/products";
-    public static final String CART_PAGE_ENDPOINT = "/cart";
-    public static final String[] PRODUCT_ENDPOINT = {"https://www.singersl.com/product/asus-creator-k3605zc-rp593ws-12th-gen-i5-12500h-16gb-ram-512gb-ssd-indie-black", "https://www.singersl.com/product/sony-xv500-x-series-wireless-party-speaker"};
-    public static final String PRODUCT_DETAILS_ENDPOINT = "/product/";
-    public static final String LOYALTY_PAGE_ENDPOINT = "/added-services/singer-red-loyalty-program";
+    public static final String BASE_URL = ConfigLoader.getProperty("base.url");
+    public static final String HOME_PAGE_ENDPOINT = ConfigLoader.getProperty("home.page.endpoint");
+    public static final String PRODUCT_PAGE_ENDPOINT = ConfigLoader.getProperty("product.page.endpoint");
+    public static final String CART_PAGE_ENDPOINT = ConfigLoader.getProperty("cart.page.endpoint");
+    public static final String[] PRODUCT_ENDPOINT = ConfigLoader.getProperty("product.endpoints").split(",");
+    public static final String PRODUCT_DETAILS_ENDPOINT = ConfigLoader.getProperty("product.details.endpoint");
+    public static final String LOYALTY_PAGE_ENDPOINT = ConfigLoader.getProperty("loyalty.page.endpoint");
 }
