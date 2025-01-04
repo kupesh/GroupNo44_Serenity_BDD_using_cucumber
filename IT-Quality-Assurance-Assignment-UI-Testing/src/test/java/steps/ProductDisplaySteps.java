@@ -9,10 +9,11 @@ public class ProductDisplaySteps {
 
     private ProductDisplayPage productDisplayPage = new ProductDisplayPage();
 
-    @Given("I open the product page")
-    public void i_open_the_product_page() {
+    @Given("I open the product display page")
+    public void i_open_the_product_display_page() {
         productDisplayPage.openPage("https://www.singersl.com/product/dell-optical-wired-mouse-ms116");
     }
+    
 
     @Then("I check if the product is available")
     public void i_check_if_a_product_is_available() {
