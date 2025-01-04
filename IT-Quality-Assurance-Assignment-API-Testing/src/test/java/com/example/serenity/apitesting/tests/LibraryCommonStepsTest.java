@@ -3,8 +3,10 @@ package com.example.serenity.apitesting.tests;
 import com.example.serenity.apitesting.base.BaseTest;
 import com.example.serenity.apitesting.models.Book;
 import com.example.serenity.apitesting.utils.RequestHelper;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
+
+import io.cucumber.java.AfterAll;
+
+import io.cucumber.java.BeforeAll;
 import io.cucumber.java.en.Given;
 import io.restassured.response.Response;
 
@@ -17,32 +19,32 @@ public class LibraryCommonStepsTest  extends BaseTest {
     private String createdBookId;
     private static boolean isSetupDone = false;
 
-//    @Before
-//    public void setup() {
-//        if (!isSetupDone) {
-//
-//                Book book = new Book();
-//                book.setTitle("Sample Book for Test");
-//                book.setAuthor("Test Author");
-//
-//                RequestHelper requestHelper = new RequestHelper(BASE_URI);
-//                Response response = requestHelper
-//                        .withEndpoint(CREATE_BOOK_ENDPOINT)
-//                        .withAuth(ADMIN_USERNAME, ADMIN_PASSWORD)
-//                        .withBody(book)
-//                        .sendRequest("POST");
-//
-//                if (response.getStatusCode() == 201) {
-//                    String bookId = response.jsonPath().getString("id");
-//                    System.out.println("Sample book created successfully with ID: " + bookId);
-//                } else {
-//                    System.err.println("Failed to create sample book: " + response.body().asString());
-//                }
-//
-//                // Set the flag to true so the setup runs only once
-//                isSetupDone = true;
-//            }
-//        }
+    @BeforeAll
+    public static void setup() {
+        if (!isSetupDone) {
+
+                Book book = new Book();
+                book.setTitle("Sample Book for Test");
+                book.setAuthor("Test Author");
+
+                RequestHelper requestHelper = new RequestHelper(BASE_URI);
+                Response response = requestHelper
+                        .withEndpoint(BOOKS_ENDPOINT)
+                        .withAuth(ADMIN_USERNAME, ADMIN_PASSWORD)
+                        .withBody(book)
+                        .sendRequest("POST");
+
+                if (response.getStatusCode() == 201) {
+                    String bookId = response.jsonPath().getString("id");
+                    System.out.println("Sample book created successfully with ID: " + bookId);
+                } else {
+                    System.err.println("Failed to create sample book: " + response.body().asString());
+                }
+
+                // Set the flag to true so the setup runs only once
+                isSetupDone = true;
+            }
+        }
 
 
     @Given("the library API is running and a book is created")
@@ -63,7 +65,7 @@ public class LibraryCommonStepsTest  extends BaseTest {
 //        if (createdBookId != null) {
 //            RequestHelper requestHelper = new RequestHelper(BASE_URI);
 //            Response response = requestHelper
-//                    .withEndpoint(CREATE_BOOK_ENDPOINT + "/" + createdBookId)
+//                    .withEndpoint(BOOKS_ENDPOINT + "/" + createdBookId)
 //                    .withAuth(USER_USERNAME, ADMIN_PASSWORD)
 //                    .sendRequest("DELETE");
 //
@@ -71,8 +73,8 @@ public class LibraryCommonStepsTest  extends BaseTest {
 //            System.out.println("Book deleted successfully with ID: " + createdBookId);
 //        }
 //    }
-//
-//    @After
+
+//    @AfterAll
 //    public void cleanUp() {
 //        if (createdBookId != null) {
 //            deleteCreatedBook();
