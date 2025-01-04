@@ -30,8 +30,8 @@ public class RedLoyaltyPage extends PageObject {
 
     public boolean isOnFormPage() {
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.urlContains("formPage")); // Replace "formPage" with the actual URL or identifier of the form page.
-        return getDriver().getCurrentUrl().contains("formPage");
+        wait.until(ExpectedConditions.urlContains("data-fancybox")); // Replace "formPage" with the actual URL or identifier of the form page.
+        return getDriver().getCurrentUrl().contains("data-fancybox");
     }
 
     public void openFormPageDirectly() {
