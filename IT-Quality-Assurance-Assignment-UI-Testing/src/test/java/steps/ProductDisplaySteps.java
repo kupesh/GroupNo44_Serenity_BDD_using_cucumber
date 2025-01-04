@@ -9,20 +9,21 @@ public class ProductDisplaySteps {
 
     private ProductDisplayPage productDisplayPage = new ProductDisplayPage();
 
-    @Given("I open the product page for Dell Optical Wired Mouse MS116")
-    public void i_open_the_product_page() {
+    @Given("I open the product display page")
+    public void i_open_the_product_display_page() {
         productDisplayPage.openPage("https://www.singersl.com/product/dell-optical-wired-mouse-ms116");
     }
+    
 
     @Then("I check if the product is available")
     public void i_check_if_a_product_is_available() {
         boolean isProductAvailable = productDisplayPage.isProductAvailable();
-        assertTrue("Product is not available", isProductAvailable);
+        assertTrue("Product is not available", isProductAvailable); 
     }
 
-    @Then("I should see the product image and price displayed")
-    public void i_should_see_the_product_image_and_price_displayed() {
+    @Then("I validate the product display")
+    public void i_validate_the_product_display() {
         assertTrue("Product image is not displayed", productDisplayPage.isProductImageDisplayed());
-        assertTrue("Product price is not displayed", productDisplayPage.isProductPriceDisplayed());
+        assertTrue("Product price is not displayed", productDisplayPage.isProductPriceDisplayed()); 
     }
 }
