@@ -31,7 +31,7 @@ public class LibraryDeleteTest extends BaseTest {
         RequestHelper requestHelper = new RequestHelper(BASE_URI);
         response = requestHelper.deleteBookById(BOOKS_ENDPOINT, bookID, "RandomUser", "strong-password");
 
-        assertThat("Failed to delete the book", response.getStatusCode(), is(403));
+        assertThat("Failed to delete the book", response.getStatusCode(), is(401));
         System.out.println("Book deleted successfully with ID: " + bookID);
     }
 

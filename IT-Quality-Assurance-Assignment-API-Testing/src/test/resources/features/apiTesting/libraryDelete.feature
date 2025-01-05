@@ -8,12 +8,12 @@ Feature: Library API DELETE Operations
     When Admin delete a book using book ID 2
     Then the response code after deleting the book should be 200
 
-  Scenario Outline: <role> delete a book by ID 3
-    When <role> try to delete a book using book ID 3
-    Then the response code should be 403 as user is not permitted
+  Scenario Outline: <role> delete a book by ID <bookId>
+    When <role> try to delete a book using book ID <bookId>
+    Then the response code should be <code> as user is not permitted
 
     Examples:
-      | role  |
-      | User  |
-      | Non registered user |
+      | role  | bookId | code |
+      | User  | 3      | 403        |
+      | Non registered user | 2 | 401 |
 
