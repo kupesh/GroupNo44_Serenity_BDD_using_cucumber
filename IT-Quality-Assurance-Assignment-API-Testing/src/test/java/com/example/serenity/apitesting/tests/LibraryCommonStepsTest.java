@@ -53,31 +53,14 @@ public class LibraryCommonStepsTest  extends BaseTest {
         Response response = requestHelper.fetchBook(BOOKS_ENDPOINT, ADMIN_USERNAME, ADMIN_PASSWORD);
         assertThat("API is not running", response.getStatusCode(), is(200));
 
-//        // Create a book
-//        String uniqueTitle = "Test Book " + System.currentTimeMillis();
-//        createdBookId = createInitialBook(uniqueTitle, "Default Author");
+    }
+
+    @Given("the library API is running and book with ID {int} available")
+    public void theLibraryAPIIsRunningAndBookCreated(int bookId) {
+        RequestHelper requestHelper = new RequestHelper(BASE_URI);
+        Response response = requestHelper.fetchBookById(BOOKS_ENDPOINT, bookId, ADMIN_USERNAME, ADMIN_PASSWORD);
+        assertThat("Book ID 2 is not available", response.getStatusCode(), is(200));
 
     }
 
-
-
-//    public void deleteCreatedBook() {
-//        if (createdBookId != null) {
-//            RequestHelper requestHelper = new RequestHelper(BASE_URI);
-//            Response response = requestHelper
-//                    .withEndpoint(BOOKS_ENDPOINT + "/" + createdBookId)
-//                    .withAuth(USER_USERNAME, ADMIN_PASSWORD)
-//                    .sendRequest("DELETE");
-//
-//            assertThat("Failed to delete the book", response.getStatusCode(), is(200));
-//            System.out.println("Book deleted successfully with ID: " + createdBookId);
-//        }
-//    }
-
-//    @AfterAll
-//    public void cleanUp() {
-//        if (createdBookId != null) {
-//            deleteCreatedBook();
-//        }
-//    }
 }
